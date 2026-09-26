@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T21:10:50Z",
+  "generated": "2026-09-26T21:13:05Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -64,6 +64,7 @@
           "signed": true,
           "notes": "The first release built to be handed to other people rather than run only on the\nmachine it was written on.\n\n**Installing**\n- Compressed `.dmg` (~690 KB) with an Applications drop target, a `READ ME\n  FIRST` covering the first-launch Gatekeeper prompt, and a `First Run.command`\n  that clears the quarantine flag for you.\n\n**Updating**\n- Settings \u2192 General \u2192 **Check now**, or \u2318-menu \u2192 *Check for Updates\u2026*, plus a\n  quiet once-a-day check on launch that says nothing unless there is news.\n- An update is downloaded from this repository's releases and is **refused\n  unless it carries a valid Ed25519 signature** from the release key. The signed\n  message includes the version, so an old signature cannot be replayed to force\n  a downgrade. The swap is atomic \u2014 a crash mid-update cannot leave an app that\n  will not start.\n- Your board, notes and settings live in `~/.undercurrent/breachradar/` and are\n  untouched by an update.\n\n**Privacy**\n- The SEC contact address is a preference now instead of a value baked into the\n  binary. Set yours in Settings \u2192 General; Settings also shows exactly what the\n  app sends. Nothing else about you leaves the machine \u2014 there is no server and\n  no telemetry.\n- Paths that assumed a `~/NEXUS` tree fall back to the app's own store, so a\n  fresh install creates nothing in a stranger's home directory.\n- The build refuses to finish if any machine-identifying string is found inside\n  the bundle.\n\n**Fixed**\n- Update checks bypass the URL cache. Without this the appcast and the zip could\n  both be answered from cache, which looks like a working updater right up until\n  a release goes out and nobody is offered it.",
           "minSystem": "11.0",
+          "channelSignature": "iKqTMEV5GcFNxYHApgMQnw5jmyZce3t1oId6AscMEuRSDe9/iqcIkY1pft+z7azHuRohgPZyAD6Y+7eom8gbCw==",
           "versions": [
             {
               "version": "0.2.1",
