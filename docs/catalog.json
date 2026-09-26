@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:05:04Z",
+  "generated": "2026-09-26T22:05:52Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 7,
+    "products": 8,
     "platforms": {
-      "macos": 7,
+      "macos": 8,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -160,6 +160,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip",
                 "sha256": "7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1",
                 "size": 1238234
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "drift",
+      "name": "Drift",
+      "tagline": "",
+      "description": "",
+      "category": "Tools",
+      "publisher": "Undercurrent",
+      "homepage": null,
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": null,
+      "updated": "2026-09-26T22:05:51Z",
+      "platforms": {
+        "macos": {
+          "manifest": "drift/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/drift/appcast.json",
+          "version": "1.0.0",
+          "published": "2026-09-26T22:05:51Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/drift-v1.0.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Drift-1.0.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/drift-v1.0.0/Drift-1.0.0.zip",
+              "sha256": "06507350c130322a953df2888f0dc538f40495f99837e396919a325fadaf8f73",
+              "size": 114898379
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Drift-1.0.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/drift-v1.0.0/Drift-1.0.0.zip",
+            "sha256": "06507350c130322a953df2888f0dc538f40495f99837e396919a325fadaf8f73",
+            "size": 114898379
+          },
+          "signed": false,
+          "notes": "Drift 1.0.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "aYBEchgcJoITGB2uE4ypy06Mtywe44OvBlsQt/1ul3cPV7Jk1zKqyV88vNqdhRdwkaYe2P9ZnKvcAiACBSowDg==",
+          "versions": [
+            {
+              "version": "1.0.0",
+              "published": "2026-09-26T22:05:51Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/drift-v1.0.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Drift-1.0.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/drift-v1.0.0/Drift-1.0.0.zip",
+                  "sha256": "06507350c130322a953df2888f0dc538f40495f99837e396919a325fadaf8f73",
+                  "size": 114898379
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Drift-1.0.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/drift-v1.0.0/Drift-1.0.0.zip",
+                "sha256": "06507350c130322a953df2888f0dc538f40495f99837e396919a325fadaf8f73",
+                "size": 114898379
               }
             }
           ]
