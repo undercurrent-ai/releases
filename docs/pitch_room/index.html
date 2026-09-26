@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PitchRoom — Undercurrent Depot</title>
+<meta name="description" content="One shelf for every deck and one-pager you send out">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">PI</div>
+    <div style="min-width:0">
+      <h1>PitchRoom</h1>
+      <p class="tagline">One shelf for every deck and one-pager you send out</p>
+    </div>
+  </section>
+  <div class='prose'><p>Outbound documents scatter — a build directory, a Drive folder, a downloads folder, three near-identical versions and no memory of which one actually went out. PitchRoom indexes them all into one view and is explicit about which is current.</p><p>One pointer per document decides what is current, and it is the only thing the app treats as authoritative. Everything else is history, kept and browsable rather than deleted, because the question is usually &quot;what did I send in August&quot; rather than &quot;what is newest&quot;.</p><p>A caveat worth stating plainly: the folders PitchRoom looks in are hardcoded to one machine&#x27;s layout — a specific Drive mount, a specific build directory, the Desktop. It launches anywhere and, until those paths are changed in the source, shows nothing. It is published because it is a small, readable example of the pattern, not because it is ready to be useful to you.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · PitchRoom-0.1.0.zip</div>
+    <div class="facts">0.1.0 · 187 KB · 2026-09-26 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip">Download</a>
+  
+</div><div class='prose'><p>PitchRoom 0.1.0, published to the Undercurrent release channel.</p><p>Install with [Depot](../depot/), which replaces the bundle atomically and quits a running copy first, or unzip and drag to Applications.</p><p>This build is ad-hoc signed rather than notarised, so a first launch from a download asks once — <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. A Depot install carries no quarantine flag and never meets that prompt.</p></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/pitch_room/appcast.json</td></tr></table><pre>shasum -a 256 PitchRoom-0.1.0.zip
+# 71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.1.0 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-26</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip'>ZIP</a></td><td class='h'>71b9e57067cbadf743af3beef3c40bef</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:03:43Z",
+  "generated": "2026-09-26T22:05:04Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 6,
+    "products": 7,
     "platforms": {
-      "macos": 6,
+      "macos": 7,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -170,7 +170,7 @@
       "slug": "foundry",
       "name": "Foundry",
       "tagline": "Finds every app you had an AI build, and what it was built from",
-      "description": "Build enough small tools and you lose track of them. Foundry is the registry: it scans the places apps actually end up, identifies the ones that are yours, and shows each with its version, its size, what it was built with, and links straight to its source repository and its runtime data folder.\n\nLaunch, reveal in Finder, or open the repo in a terminal. Favourites and ordering are yours to set and are remembered.\n\nIt identifies apps by bundle identifier prefix rather than by guessing. A heuristic like \"small and unsigned\" would sweep in half of Applications; an allowlist finds the things you made and nothing else. Extra roots and extra identifiers are settings, so an app in an unusual place can be added without a rebuild.",
+      "description": "Build enough small tools and you lose track of them. Foundry is the registry: it scans the places apps actually end up, identifies the ones that are yours, and shows each with its version, its size, what it was built with, and links straight to its source repository and its runtime data folder.\n\nLaunch, reveal in Finder, or open the repo in a terminal. Favourites and ordering are yours to set and are remembered.\n\nIt identifies apps by bundle identifier prefix rather than by guessing. A heuristic like \"small and unsigned\" would sweep in half of Applications; an allowlist finds the things you made and nothing else. Extra roots and extra identifiers are settings, so an app in an unusual place can be added without a rebuild.\n\nA caveat worth stating plainly: Foundry resolves each app to its source repository through a table of conventions \u2014 where repos live, how project folders are named. Those conventions are the author's. On a machine laid out differently it will still find and launch your apps, but the repo and runtime links will come up empty until you point its extra-roots setting at the right places.",
       "category": "Developer tools",
       "publisher": "Undercurrent",
       "homepage": "https://undercurrent.ai",
@@ -428,6 +428,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
                 "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
                 "size": 228702
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "pitch_room",
+      "name": "PitchRoom",
+      "tagline": "One shelf for every deck and one-pager you send out",
+      "description": "Outbound documents scatter \u2014 a build directory, a Drive folder, a downloads folder, three near-identical versions and no memory of which one actually went out. PitchRoom indexes them all into one view and is explicit about which is current.\n\nOne pointer per document decides what is current, and it is the only thing the app treats as authoritative. Everything else is history, kept and browsable rather than deleted, because the question is usually \"what did I send in August\" rather than \"what is newest\".\n\nA caveat worth stating plainly: the folders PitchRoom looks in are hardcoded to one machine's layout \u2014 a specific Drive mount, a specific build directory, the Desktop. It launches anywhere and, until those paths are changed in the source, shows nothing. It is published because it is a small, readable example of the pattern, not because it is ready to be useful to you.",
+      "category": "Productivity",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.pitchroom",
+      "updated": "2026-09-26T22:05:03Z",
+      "platforms": {
+        "macos": {
+          "manifest": "pitch_room/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/pitch_room/appcast.json",
+          "version": "0.1.0",
+          "published": "2026-09-26T22:05:03Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/pitch_room-v0.1.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "PitchRoom-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
+              "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
+              "size": 191859
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "PitchRoom-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
+            "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
+            "size": 191859
+          },
+          "signed": false,
+          "notes": "PitchRoom 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "QzDvFRqL2EomaU+IyONLQK6136eTWgD+cYTN6q/WXtrf9be/XO5Smi+ioPFaZbZdCKzcHA0aJ8DVvTvZKv/6Bg==",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "published": "2026-09-26T22:05:03Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/pitch_room-v0.1.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "PitchRoom-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
+                  "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
+                  "size": 191859
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "PitchRoom-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
+                "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
+                "size": 191859
               }
             }
           ]

@@ -1,0 +1,11 @@
+{
+  "slug": "pitch_room",
+  "name": "PitchRoom",
+  "tagline": "One shelf for every deck and one-pager you send out",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.pitchroom",
+  "description": "Outbound documents scatter — a build directory, a Drive folder, a downloads folder, three near-identical versions and no memory of which one actually went out. PitchRoom indexes them all into one view and is explicit about which is current.\n\nOne pointer per document decides what is current, and it is the only thing the app treats as authoritative. Everything else is history, kept and browsable rather than deleted, because the question is usually \"what did I send in August\" rather than \"what is newest\".\n\nA caveat worth stating plainly: the folders PitchRoom looks in are hardcoded to one machine's layout — a specific Drive mount, a specific build directory, the Desktop. It launches anywhere and, until those paths are changed in the source, shows nothing. It is published because it is a small, readable example of the pattern, not because it is ready to be useful to you.",
+  "homepage": "https://undercurrent.ai"
+}

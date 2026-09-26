@@ -1,0 +1,21 @@
+{
+  "app": "pitch_room",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.0",
+    "published": "2026-09-26T22:05:03Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/pitch_room-v0.1.0",
+    "assets": [
+      {
+        "name": "PitchRoom-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
+        "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
+        "size": 191859
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "PitchRoom 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "QzDvFRqL2EomaU+IyONLQK6136eTWgD+cYTN6q/WXtrf9be/XO5Smi+ioPFaZbZdCKzcHA0aJ8DVvTvZKv/6Bg==",
+    "channelSignedAsset": "PitchRoom-0.1.0.zip"
+  }
+}
