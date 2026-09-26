@@ -1,0 +1,11 @@
+{
+  "slug": "drift",
+  "name": "Drift",
+  "tagline": "The gap between what you said mattered and where the time went",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.drift",
+  "description": "You write down what matters. Then you spend three weeks on something else. Drift puts both halves on one screen: your stated priorities on a Now / Next / Later / Parked board, against where your attention measurably went — and names the gap.\n\nThe attention half is not self-reported, which is the point. Drift reads the transcripts your AI coding sessions already leave on disk and derives what you actually worked on from them. Nothing is typed in twice and nothing is flattering.\n\nA Reports inbox treats your Desktop as mail: generated reports arrive, and it headlines how long each one has gone unopened. The ones you never read are the most useful thing on that screen.\n\nIt reads local session transcripts from your home directory. Nothing is uploaded — there is no server and no account — but that is the data it works from, so it is worth knowing before you run it.",
+  "homepage": "https://undercurrent.ai"
+}

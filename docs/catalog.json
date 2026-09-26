@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:06:38Z",
+  "generated": "2026-09-26T22:07:25Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -236,15 +236,15 @@
     {
       "slug": "drift",
       "name": "Drift",
-      "tagline": "",
-      "description": "",
-      "category": "Tools",
+      "tagline": "The gap between what you said mattered and where the time went",
+      "description": "You write down what matters. Then you spend three weeks on something else. Drift puts both halves on one screen: your stated priorities on a Now / Next / Later / Parked board, against where your attention measurably went \u2014 and names the gap.\n\nThe attention half is not self-reported, which is the point. Drift reads the transcripts your AI coding sessions already leave on disk and derives what you actually worked on from them. Nothing is typed in twice and nothing is flattering.\n\nA Reports inbox treats your Desktop as mail: generated reports arrive, and it headlines how long each one has gone unopened. The ones you never read are the most useful thing on that screen.\n\nIt reads local session transcripts from your home directory. Nothing is uploaded \u2014 there is no server and no account \u2014 but that is the data it works from, so it is worth knowing before you run it.",
+      "category": "Productivity",
       "publisher": "Undercurrent",
-      "homepage": null,
+      "homepage": "https://undercurrent.ai",
       "icon": null,
       "screenshots": [],
       "kind": "app",
-      "bundleId": null,
+      "bundleId": "ai.undercurrent.drift",
       "updated": "2026-09-26T22:05:51Z",
       "platforms": {
         "macos": {
