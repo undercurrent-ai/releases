@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T21:34:46Z",
+  "generated": "2026-09-26T22:03:20Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 3,
+    "products": 4,
     "platforms": {
-      "macos": 3,
+      "macos": 4,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -160,6 +160,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip",
                 "sha256": "7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1",
                 "size": 1238234
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "harbor",
+      "name": "Harbor",
+      "tagline": "Every listening port on your machine, and a button to kill it",
+      "description": "\"Port 3000 is already in use\" \u2014 by what, started from where, and how long ago? Harbor answers that as a card per listening port: the port, a guess at the service (Vite dev server, PostgreSQL), the process, its uptime, and the project folder it was launched from.\n\nTwo clicks to kill, or to force it. A **Free it** box takes a port number and clears whatever is holding it. A Projects view groups ports by repository root, so you can see that three of them belong to the same checkout. A Log records ports appearing, disappearing and being signalled.\n\nIt rescans only while the window is in front. There is no daemon and nothing runs when the app is closed.\n\nA process that ignores a polite shutdown is reported rather than assumed dead \u2014 Harbor rescans after signalling and tells you it ignored SIGTERM instead of pretending it worked.",
+      "category": "Developer tools",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.harbor",
+      "updated": "2026-09-26T22:03:20Z",
+      "platforms": {
+        "macos": {
+          "manifest": "harbor/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/harbor/appcast.json",
+          "version": "0.1.0",
+          "published": "2026-09-26T22:03:20Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/harbor-v0.1.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Harbor-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip",
+              "sha256": "44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff",
+              "size": 203035
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Harbor-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip",
+            "sha256": "44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff",
+            "size": 203035
+          },
+          "signed": false,
+          "notes": "Harbor 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "6zaS4mA6P48Kg3AiR2mjIsLa9yY2P/NgDFNSzR95osLDVAl5wiqXUjH2LM/ifDsMPxI0d6Pgd6ZAqBstw+EvAg==",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "published": "2026-09-26T22:03:20Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/harbor-v0.1.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Harbor-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip",
+                  "sha256": "44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff",
+                  "size": 203035
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Harbor-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip",
+                "sha256": "44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff",
+                "size": 203035
               }
             }
           ]

@@ -1,0 +1,11 @@
+{
+  "slug": "harbor",
+  "name": "Harbor",
+  "tagline": "Every listening port on your machine, and a button to kill it",
+  "category": "Developer tools",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.harbor",
+  "description": "\"Port 3000 is already in use\" — by what, started from where, and how long ago? Harbor answers that as a card per listening port: the port, a guess at the service (Vite dev server, PostgreSQL), the process, its uptime, and the project folder it was launched from.\n\nTwo clicks to kill, or to force it. A **Free it** box takes a port number and clears whatever is holding it. A Projects view groups ports by repository root, so you can see that three of them belong to the same checkout. A Log records ports appearing, disappearing and being signalled.\n\nIt rescans only while the window is in front. There is no daemon and nothing runs when the app is closed.\n\nA process that ignores a polite shutdown is reported rather than assumed dead — Harbor rescans after signalling and tells you it ignored SIGTERM instead of pretending it worked.",
+  "homepage": "https://undercurrent.ai"
+}

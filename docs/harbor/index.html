@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbor — Undercurrent Depot</title>
+<meta name="description" content="Every listening port on your machine, and a button to kill it">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">HA</div>
+    <div style="min-width:0">
+      <h1>Harbor</h1>
+      <p class="tagline">Every listening port on your machine, and a button to kill it</p>
+    </div>
+  </section>
+  <div class='prose'><p>&quot;Port 3000 is already in use&quot; — by what, started from where, and how long ago? Harbor answers that as a card per listening port: the port, a guess at the service (Vite dev server, PostgreSQL), the process, its uptime, and the project folder it was launched from.</p><p>Two clicks to kill, or to force it. A <strong>Free it</strong> box takes a port number and clears whatever is holding it. A Projects view groups ports by repository root, so you can see that three of them belong to the same checkout. A Log records ports appearing, disappearing and being signalled.</p><p>It rescans only while the window is in front. There is no daemon and nothing runs when the app is closed.</p><p>A process that ignores a polite shutdown is reported rather than assumed dead — Harbor rescans after signalling and tells you it ignored SIGTERM instead of pretending it worked.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · Harbor-0.1.0.zip</div>
+    <div class="facts">0.1.0 · 198 KB · 2026-09-26 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip">Download</a>
+  
+</div><div class='prose'><p>Harbor 0.1.0, published to the Undercurrent release channel.</p><p>Install with [Depot](../depot/), which replaces the bundle atomically and quits a running copy first, or unzip and drag to Applications.</p><p>This build is ad-hoc signed rather than notarised, so a first launch from a download asks once — <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. A Depot install carries no quarantine flag and never meets that prompt.</p></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/harbor/appcast.json</td></tr></table><pre>shasum -a 256 Harbor-0.1.0.zip
+# 44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.1.0 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-26</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip'>ZIP</a></td><td class='h'>44148db01946e6e6bff2e2b98d7c89c9</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

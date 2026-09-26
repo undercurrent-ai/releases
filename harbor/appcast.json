@@ -1,0 +1,21 @@
+{
+  "app": "harbor",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.0",
+    "published": "2026-09-26T22:03:20Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/harbor-v0.1.0",
+    "assets": [
+      {
+        "name": "Harbor-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/harbor-v0.1.0/Harbor-0.1.0.zip",
+        "sha256": "44148db01946e6e6bff2e2b98d7c89c96cf21efe04fbbc85be22b65ff5637cff",
+        "size": 203035
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Harbor 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "6zaS4mA6P48Kg3AiR2mjIsLa9yY2P/NgDFNSzR95osLDVAl5wiqXUjH2LM/ifDsMPxI0d6Pgd6ZAqBstw+EvAg==",
+    "channelSignedAsset": "Harbor-0.1.0.zip"
+  }
+}
