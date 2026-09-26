@@ -1,0 +1,10 @@
+{
+  "slug": "breach_radar",
+  "name": "BreachRadar",
+  "tagline": "Breach monitoring and an outreach queue, on your own machine",
+  "category": "Security",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "description": "Watches SEC EDGAR 8-K Item 1.05 filings and six incident-press feeds, and puts every new disclosure in front of you as a triage queue rather than a dashboard you have to remember to open.\n\nEight columns from Inbox to Call booked. The day counter on each card is computed as it renders, so a target sitting in Hold turns colour by itself on the morning it enters the window you care about. Nothing is auto-filed into an outbound column — extracting an organisation from a headline is a heuristic and it is wrong often enough to matter.\n\nNo daemon, no API keys, no telemetry and no server. It polls when you open it, or once a day at most. Your board, notes and settings stay in a folder in your home directory and an update never touches them.",
+  "homepage": "https://undercurrent.ai"
+}

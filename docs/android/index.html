@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android — Undercurrent Depot</title>
+<meta name="description" content="Install Depot for Android and get updates for every Undercurrent app.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Depot for Android</h1>
+    <p>Android has no notion of a second app store, so updates need something
+       that checks for them. Depot is that: one app that lists everything on this
+       channel, installs it, and tells you when a new version appears.</p>
+  </section>
+  <h2 class="section">1 · Install Depot</h2>
+  <div class="note"><strong>Not published yet.</strong>
+  Depot for Android is built but has no release on the channel yet. Until it
+  does, install each APK from its own product page by hand.</div>
+  <div class="note"><strong>Android will ask permission twice, and that is normal.</strong>
+    Once to allow your browser to install an APK at all
+    (<em>Settings → Apps → Special access → Install unknown apps</em>), and once
+    per install to confirm. Depot cannot install anything silently — no
+    third-party store can, unless it ships with the device.</div>
+  <h2 class="section">2 · Everything else comes from Depot</h2>
+  <p class="prose">Open it and the catalogue is there. It checks once a day in the
+     background and posts a notification when something is newer than what you
+     have installed. Nothing is installed without you tapping it.</p>
+  <ul class="prose"><li style='color:var(--text-muted)'>nothing yet</li></ul>
+  <h2 class="section">Installing by hand instead</h2>
+  <p class="prose">Every APK is on its product page with its SHA-256. That works
+     fine — you just won't hear about updates. To check a download before
+     installing:</p>
+  <pre>sha256sum MyApp-1.0.0.apk   # or: shasum -a 256 on macOS</pre>
+  <h2 class="section">What Depot verifies before it installs</h2>
+  <ul class="prose">
+    <li>The download's <strong>SHA-256</strong> matches the manifest.</li>
+    <li>The manifest carries a valid <strong>Ed25519 signature</strong> from our
+        release key. Write access to the public channel repo is not enough to
+        push an app to anybody.</li>
+    <li>The APK's own <strong>signing certificate</strong> matches the one the
+        manifest pins — so a swapped file is refused by Depot, rather than by a
+        system dialog you'd read as "this app is broken".</li>
+  </ul>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

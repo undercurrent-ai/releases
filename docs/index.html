@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undercurrent Depot</title>
+<meta name="description" content="Download Undercurrent apps for macOS and Android, with automatic updates.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="mac/index.html">macOS</a>
+    <a href="android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Undercurrent Depot</h1>
+    <p>Everything we build, in one place, with updates. Mac apps check this
+       channel themselves; on Android the Depot app does it for all of them.</p>
+    <div class="meta">
+      <span>1 products</span>
+      <span>1 macOS</span>
+      <span>updated 2026-09-26</span>
+    </div>
+  </section>
+  <h2 class="section">Apps</h2>
+  <div class="grid">
+<div class="card">
+  <div class="top">
+    <div class="icon">BR</div>
+    <div style="min-width:0">
+      <h3><a href="breach_radar/index.html">BreachRadar</a></h3>
+      <p class="tagline">Breach monitoring and an outreach queue, on your own machine</p>
+    </div>
+  </div>
+  <div class="plats"><span class='pill macos'>macOS 0.2.1</span></div>
+  <div class="foot">
+    <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg">Download</a>
+    <a class="btn ghost small" href="breach_radar/index.html">Details</a>
+  </div>
+</div>
+  </div>
+  <h2 class="section">Getting updates</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="top"><div class="icon">A</div><div style="min-width:0">
+        <h3><a href="android/index.html">Depot for Android</a></h3>
+        <p class="tagline">One app that installs and updates the rest</p>
+      </div></div>
+      <div class="foot"><a class="btn ghost small" href="android/index.html">How it works</a></div>
+    </div>
+    <div class="card">
+      <div class="top"><div class="icon">M</div><div style="min-width:0">
+        <h3><a href="mac/index.html">Installing on macOS</a></h3>
+        <p class="tagline">First-run Gatekeeper, and why updates skip it</p>
+      </div></div>
+      <div class="foot"><a class="btn ghost small" href="mac/index.html">Read it</a></div>
+    </div>
+  </div>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

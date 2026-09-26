@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>macOS — Undercurrent Depot</title>
+<meta name="description" content="How to install and update ad-hoc signed Undercurrent apps on macOS.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Installing on macOS</h1>
+    <p>These builds are signed, but with an ad-hoc signature rather than a paid
+       Apple Developer ID. macOS therefore asks about the first launch. It asks
+       once, per app, ever.</p>
+  </section>
+  <h2 class="section">First launch</h2>
+  <ol class="prose">
+    <li>Open the <code class="inline">.dmg</code> and drag the app to
+        <strong>Applications</strong>.</li>
+    <li>Launch it. macOS says it "cannot be opened because Apple cannot check it
+        for malicious software".</li>
+    <li>Open <strong>System Settings → Privacy &amp; Security</strong>, scroll to
+        the bottom, and click <strong>Open Anyway</strong> next to the app's name.</li>
+    <li>Launch it again and confirm. That is the last time you will see this.</li>
+  </ol>
+  <div class="note"><strong>macOS 15 removed the right-click → Open shortcut</strong>
+    that used to skip step 3. Guides that still tell you to right-click are out of
+    date. Each DMG also carries a <code class="inline">First Run.command</code>
+    that clears the quarantine flag for you if you prefer that.</div>
+  <h2 class="section">Updates never ask again</h2>
+  <p class="prose">An app updating itself from this channel replaces its own
+     bundle in place. There is no download from a browser, so no quarantine flag,
+     so no Gatekeeper prompt. The one-time approval above is genuinely one time.</p>
+  <h2 class="section">What an update checks</h2>
+  <ul class="prose">
+    <li>The manifest's <strong>Ed25519 signature</strong> against the public key
+        compiled into the app itself.</li>
+    <li>The downloaded zip's <strong>SHA-256</strong> against the signed manifest.</li>
+    <li>The signed bytes include the version, so a valid old signature cannot be
+        replayed to push you a <em>downgrade</em>.</li>
+  </ul>
+  <p class="prose">The swap is atomic: a crash mid-update cannot leave an app
+     that will not start.</p>
+  <h2 class="section">Verifying a download yourself</h2>
+  <pre>shasum -a 256 ~/Downloads/TheApp-1.0.0.dmg</pre>
+  <p class="prose">Compare against the SHA-256 on the app's page. Those are
+     published from the same build that produced the file, and a published version
+     is never rebuilt.</p>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

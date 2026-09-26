@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "generated": "2026-09-26T21:10:07Z",
+  "channel": {
+    "name": "Undercurrent",
+    "repo": "undercurrent-ai/releases",
+    "site": "https://get.undercurrent.ai",
+    "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
+  },
+  "counts": {
+    "products": 1,
+    "platforms": {
+      "macos": 1,
+      "android": 0,
+      "linux": 0,
+      "windows": 0,
+      "server": 0
+    }
+  },
+  "products": [
+    {
+      "slug": "breach_radar",
+      "name": "BreachRadar",
+      "tagline": "Breach monitoring and an outreach queue, on your own machine",
+      "description": "Watches SEC EDGAR 8-K Item 1.05 filings and six incident-press feeds, and puts every new disclosure in front of you as a triage queue rather than a dashboard you have to remember to open.\n\nEight columns from Inbox to Call booked. The day counter on each card is computed as it renders, so a target sitting in Hold turns colour by itself on the morning it enters the window you care about. Nothing is auto-filed into an outbound column \u2014 extracting an organisation from a headline is a heuristic and it is wrong often enough to matter.\n\nNo daemon, no API keys, no telemetry and no server. It polls when you open it, or once a day at most. Your board, notes and settings stay in a folder in your home directory and an update never touches them.",
+      "category": "Security",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "updated": "2026-09-23T19:11:22Z",
+      "platforms": {
+        "macos": {
+          "manifest": "breach_radar/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/breach_radar/appcast.json",
+          "version": "0.2.1",
+          "published": "2026-09-23T19:11:22Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.2.1",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "BreachRadar-0.2.1.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.zip",
+              "sha256": "3f06b9d079c96fda8cede851ce6dba16640cf72b815f7352303fed054dc70ad5",
+              "size": 486646
+            },
+            {
+              "role": "dmg",
+              "name": "BreachRadar-0.2.1.dmg",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+              "sha256": null,
+              "size": null
+            }
+          ],
+          "primary": {
+            "role": "dmg",
+            "name": "BreachRadar-0.2.1.dmg",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+            "sha256": null,
+            "size": null
+          },
+          "signed": true,
+          "notes": "The first release built to be handed to other people rather than run only on the\nmachine it was written on.\n\n**Installing**\n- Compressed `.dmg` (~690 KB) with an Applications drop target, a `READ ME\n  FIRST` covering the first-launch Gatekeeper prompt, and a `First Run.command`\n  that clears the quarantine flag for you.\n\n**Updating**\n- Settings \u2192 General \u2192 **Check now**, or \u2318-menu \u2192 *Check for Updates\u2026*, plus a\n  quiet once-a-day check on launch that says nothing unless there is news.\n- An update is downloaded from this repository's releases and is **refused\n  unless it carries a valid Ed25519 signature** from the release key. The signed\n  message includes the version, so an old signature cannot be replayed to force\n  a downgrade. The swap is atomic \u2014 a crash mid-update cannot leave an app that\n  will not start.\n- Your board, notes and settings live in `~/.undercurrent/breachradar/` and are\n  untouched by an update.\n\n**Privacy**\n- The SEC contact address is a preference now instead of a value baked into the\n  binary. Set yours in Settings \u2192 General; Settings also shows exactly what the\n  app sends. Nothing else about you leaves the machine \u2014 there is no server and\n  no telemetry.\n- Paths that assumed a `~/NEXUS` tree fall back to the app's own store, so a\n  fresh install creates nothing in a stranger's home directory.\n- The build refuses to finish if any machine-identifying string is found inside\n  the bundle.\n\n**Fixed**\n- Update checks bypass the URL cache. Without this the appcast and the zip could\n  both be answered from cache, which looks like a working updater right up until\n  a release goes out and nobody is offered it.",
+          "minSystem": "11.0",
+          "versions": [
+            {
+              "version": "0.2.1",
+              "published": "2026-09-23T19:11:22Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.2.1",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "BreachRadar-0.2.1.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.zip",
+                  "sha256": "3f06b9d079c96fda8cede851ce6dba16640cf72b815f7352303fed054dc70ad5",
+                  "size": 486646
+                },
+                {
+                  "role": "dmg",
+                  "name": "BreachRadar-0.2.1.dmg",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+                  "sha256": null,
+                  "size": null
+                }
+              ],
+              "primary": {
+                "role": "dmg",
+                "name": "BreachRadar-0.2.1.dmg",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+                "sha256": null,
+                "size": null
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
