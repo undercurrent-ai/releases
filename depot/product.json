@@ -1,0 +1,11 @@
+{
+  "slug": "depot",
+  "name": "Depot",
+  "tagline": "The storefront and updater for everything here",
+  "category": "Utilities",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.depot",
+  "description": "Depot lists everything on this channel, installs it, and tells you when a newer version exists.\n\nOn Android it is the reason updates work at all: an APK installed by hand from a web page has nothing that ever checks for a successor, so Depot does the checking — once a day, in the background, with a notification naming what is behind. Nothing installs without you tapping it; no third-party store on Android can install silently, and one that claimed to would be lying.\n\nOn macOS it installs apps that have no updater of their own and updates the ones that do. It replaces a bundle atomically, so a crash halfway through cannot leave an app that will not start, and because Depot is not a browser the apps it installs carry no quarantine flag — the Gatekeeper prompt you get from a download never appears.\n\nEvery download is checked against its published SHA-256 and an Ed25519 signature from the release key before anything is installed. The public half of that key is compiled into Depot, so write access to the public release repository is not enough to push code to anybody.",
+  "homepage": "https://undercurrent.ai"
+}

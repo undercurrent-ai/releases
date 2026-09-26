@@ -1,0 +1,21 @@
+{
+  "app": "depot",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.0",
+    "published": "2026-09-26T21:33:57Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/depot-v0.1.0",
+    "assets": [
+      {
+        "name": "Depot-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip",
+        "sha256": "7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1",
+        "size": 1238234
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "The first release of Depot \u2014 the storefront and updater for this channel.\n\n**macOS**\n\n- Lists every product the channel publishes for macOS, with what you have\n  installed next to what is available.\n- Installs and updates apps that have no updater of their own. The bundle is\n  replaced atomically, so a crash halfway through cannot leave an app that will\n  not start, and a running copy is quit first rather than having its files pulled\n  out from under it.\n- Apps it installs carry **no quarantine flag**, because Depot is not a browser.\n  The Gatekeeper prompt you meet once on a downloaded app never appears for\n  anything installed this way.\n- Writes to `/Applications` when that is writable by your account, which it is on\n  a stock macOS, and falls back to `~/Applications`. It never asks for an\n  administrator password: an installer that can elevate is a much larger thing to\n  trust than one that cannot.\n\n**What is verified before anything is installed**\n\n- The download's SHA-256 against the published manifest.\n- An **Ed25519 channel signature** over\n  `<product>\\n<platform>\\n<version>\\n<file>\\n<sha256>\\n`, checked against a\n  public key compiled into Depot. Write access to this public repository is\n  therefore not enough to install code on anybody's machine.\n- The version is inside the signed bytes, so a valid old signature cannot be\n  replayed to force a downgrade; the filename is inside them too, so a signature\n  covering one artefact cannot be presented alongside another from the same\n  release.\n\n**Known limits in 0.1.0**\n\n- Depot does not update itself yet. It would have to quit itself mid-install, and\n  doing that correctly needs a helper process. Rebuild it from source, or\n  download it from the store page.\n- Android is a separate build, not in this release.\n",
+    "channelSignature": "YW2zA2xPnEYEVtdbo6lGCzCe7EfDO6cyuKTEbcMOBCR9qyP5sRL584QsEl8LXAsYVlGuBPLUOZzZ5jzbH8SXDQ==",
+    "channelSignedAsset": "Depot-0.1.0.zip"
+  }
+}

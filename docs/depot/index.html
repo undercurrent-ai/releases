@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depot — Undercurrent Depot</title>
+<meta name="description" content="The storefront and updater for everything here">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">DE</div>
+    <div style="min-width:0">
+      <h1>Depot</h1>
+      <p class="tagline">The storefront and updater for everything here</p>
+    </div>
+  </section>
+  <div class='prose'><p>Depot lists everything on this channel, installs it, and tells you when a newer version exists.</p><p>On Android it is the reason updates work at all: an APK installed by hand from a web page has nothing that ever checks for a successor, so Depot does the checking — once a day, in the background, with a notification naming what is behind. Nothing installs without you tapping it; no third-party store on Android can install silently, and one that claimed to would be lying.</p><p>On macOS it installs apps that have no updater of their own and updates the ones that do. It replaces a bundle atomically, so a crash halfway through cannot leave an app that will not start, and because Depot is not a browser the apps it installs carry no quarantine flag — the Gatekeeper prompt you get from a download never appears.</p><p>Every download is checked against its published SHA-256 and an Ed25519 signature from the release key before anything is installed. The public half of that key is compiled into Depot, so write access to the public release repository is not enough to push code to anybody.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · Depot-0.1.0.zip</div>
+    <div class="facts">0.1.0 · 1.2 MB · 2026-09-26 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip">Download</a>
+  
+</div><div class='prose'><p>The first release of Depot — the storefront and updater for this channel.</p><p><strong>macOS</strong></p><ul><li>Lists every product the channel publishes for macOS, with what you have</li></ul><p>installed next to what is available.</p><ul><li>Installs and updates apps that have no updater of their own. The bundle is</li></ul><p>replaced atomically, so a crash halfway through cannot leave an app that will not start, and a running copy is quit first rather than having its files pulled out from under it.</p><ul><li>Apps it installs carry <strong>no quarantine flag</strong>, because Depot is not a browser.</li></ul><p>The Gatekeeper prompt you meet once on a downloaded app never appears for anything installed this way.</p><ul><li>Writes to <code class='inline'>/Applications</code> when that is writable by your account, which it is on</li></ul><p>a stock macOS, and falls back to <code class='inline'>~/Applications</code>. It never asks for an administrator password: an installer that can elevate is a much larger thing to trust than one that cannot.</p><p><strong>What is verified before anything is installed</strong></p><ul><li>The download&#x27;s SHA-256 against the published manifest.</li><li>An <strong>Ed25519 channel signature</strong> over</li></ul><p><code class='inline'>&lt;product&gt;\n&lt;platform&gt;\n&lt;version&gt;\n&lt;file&gt;\n&lt;sha256&gt;\n</code>, checked against a public key compiled into Depot. Write access to this public repository is therefore not enough to install code on anybody&#x27;s machine.</p><ul><li>The version is inside the signed bytes, so a valid old signature cannot be</li></ul><p>replayed to force a downgrade; the filename is inside them too, so a signature covering one artefact cannot be presented alongside another from the same release.</p><p><strong>Known limits in 0.1.0</strong></p><ul><li>Depot does not update itself yet. It would have to quit itself mid-install, and</li></ul><p>doing that correctly needs a helper process. Rebuild it from source, or download it from the store page.</p><ul><li>Android is a separate build, not in this release.</li></ul></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/depot/appcast.json</td></tr></table><pre>shasum -a 256 Depot-0.1.0.zip
+# 7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.1.0 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-26</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip'>ZIP</a></td><td class='h'>7d340b27ef0150649071fbf6743cefda</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>
