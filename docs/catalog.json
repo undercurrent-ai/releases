@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:03:20Z",
+  "generated": "2026-09-26T22:03:31Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 4,
+    "products": 5,
     "platforms": {
-      "macos": 4,
+      "macos": 5,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -160,6 +160,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-v0.1.0/Depot-0.1.0.zip",
                 "sha256": "7d340b27ef0150649071fbf6743cefdaede1a1bca8c33a47e80d2fea445775e1",
                 "size": 1238234
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "foundry",
+      "name": "Foundry",
+      "tagline": "Finds every app you had an AI build, and what it was built from",
+      "description": "Build enough small tools and you lose track of them. Foundry is the registry: it scans the places apps actually end up, identifies the ones that are yours, and shows each with its version, its size, what it was built with, and links straight to its source repository and its runtime data folder.\n\nLaunch, reveal in Finder, or open the repo in a terminal. Favourites and ordering are yours to set and are remembered.\n\nIt identifies apps by bundle identifier prefix rather than by guessing. A heuristic like \"small and unsigned\" would sweep in half of Applications; an allowlist finds the things you made and nothing else. Extra roots and extra identifiers are settings, so an app in an unusual place can be added without a rebuild.",
+      "category": "Developer tools",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.foundry",
+      "updated": "2026-09-26T22:03:31Z",
+      "platforms": {
+        "macos": {
+          "manifest": "foundry/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/foundry/appcast.json",
+          "version": "0.1.0",
+          "published": "2026-09-26T22:03:31Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/foundry-v0.1.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Foundry-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/foundry-v0.1.0/Foundry-0.1.0.zip",
+              "sha256": "6b7abf33110774507828ab8a5afdd095356702deb945eca13172896a73a5764c",
+              "size": 172624
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Foundry-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/foundry-v0.1.0/Foundry-0.1.0.zip",
+            "sha256": "6b7abf33110774507828ab8a5afdd095356702deb945eca13172896a73a5764c",
+            "size": 172624
+          },
+          "signed": false,
+          "notes": "Foundry 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "B0qpzazf1mMb7ITeugxl/sfBqshnfB6r1B1SMjD2ssgbNllGc7qM64ZM3hE3Syc7RXKhbLGKeraDkhd+Mh0VBQ==",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "published": "2026-09-26T22:03:31Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/foundry-v0.1.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Foundry-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/foundry-v0.1.0/Foundry-0.1.0.zip",
+                  "sha256": "6b7abf33110774507828ab8a5afdd095356702deb945eca13172896a73a5764c",
+                  "size": 172624
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Foundry-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/foundry-v0.1.0/Foundry-0.1.0.zip",
+                "sha256": "6b7abf33110774507828ab8a5afdd095356702deb945eca13172896a73a5764c",
+                "size": 172624
               }
             }
           ]

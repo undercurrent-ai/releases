@@ -1,0 +1,21 @@
+{
+  "app": "foundry",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.0",
+    "published": "2026-09-26T22:03:31Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/foundry-v0.1.0",
+    "assets": [
+      {
+        "name": "Foundry-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/foundry-v0.1.0/Foundry-0.1.0.zip",
+        "sha256": "6b7abf33110774507828ab8a5afdd095356702deb945eca13172896a73a5764c",
+        "size": 172624
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Foundry 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "B0qpzazf1mMb7ITeugxl/sfBqshnfB6r1B1SMjD2ssgbNllGc7qM64ZM3hE3Syc7RXKhbLGKeraDkhd+Mh0VBQ==",
+    "channelSignedAsset": "Foundry-0.1.0.zip"
+  }
+}
