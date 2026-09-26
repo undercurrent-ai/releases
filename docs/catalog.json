@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:03:31Z",
+  "generated": "2026-09-26T22:03:43Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 5,
+    "products": 6,
     "platforms": {
-      "macos": 5,
+      "macos": 6,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -361,6 +361,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip",
                 "sha256": "573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f",
                 "size": 117858548
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "necessary_actions",
+      "name": "Necessary Actions",
+      "tagline": "The queue of things only a person can do",
+      "description": "Automation stops at the things that need a human: create the account, click Allow, paste the secret, approve the charge, read the SMS code, plug in the device. Those pile up invisibly and block work that is otherwise finished.\n\nNecessary Actions is one queue for them, shared across everything running on the machine. Each entry carries literal steps in order \u2014 the button to press, the exact value, the URL \u2014 an estimate, what it unblocks, and how to hand control back when it is done.\n\nThe point is the handback. An action that gets completed and then sits there has saved nobody any time, so every entry records how to resume whatever was waiting on it.",
+      "category": "Productivity",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.necessaryactions",
+      "updated": "2026-09-26T22:03:42Z",
+      "platforms": {
+        "macos": {
+          "manifest": "necessary_actions/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/necessary_actions/appcast.json",
+          "version": "0.1.0",
+          "published": "2026-09-26T22:03:42Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/necessary_actions-v0.1.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Necessary Actions-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+              "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
+              "size": 228702
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Necessary Actions-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+            "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
+            "size": 228702
+          },
+          "signed": false,
+          "notes": "Necessary Actions 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "V5Ad7xf/GKxzleGNy4X6Ns3Rb3honXC9Ily9+5KSG047W+NKGt6Dw1ZlkiiJF5MxHFUnvFrbfvebdckPfkGCDg==",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "published": "2026-09-26T22:03:42Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/necessary_actions-v0.1.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Necessary Actions-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+                  "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
+                  "size": 228702
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Necessary Actions-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+                "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
+                "size": 228702
               }
             }
           ]

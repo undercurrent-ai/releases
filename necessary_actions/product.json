@@ -1,0 +1,11 @@
+{
+  "slug": "necessary_actions",
+  "name": "Necessary Actions",
+  "tagline": "The queue of things only a person can do",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.necessaryactions",
+  "description": "Automation stops at the things that need a human: create the account, click Allow, paste the secret, approve the charge, read the SMS code, plug in the device. Those pile up invisibly and block work that is otherwise finished.\n\nNecessary Actions is one queue for them, shared across everything running on the machine. Each entry carries literal steps in order — the button to press, the exact value, the URL — an estimate, what it unblocks, and how to hand control back when it is done.\n\nThe point is the handback. An action that gets completed and then sits there has saved nobody any time, so every entry records how to resume whatever was waiting on it.",
+  "homepage": "https://undercurrent.ai"
+}
