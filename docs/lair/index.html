@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lair — Undercurrent Depot</title>
+<meta name="description" content="A project tracker that runs on your own machine">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">LA</div>
+    <div style="min-width:0">
+      <h1>Lair</h1>
+      <p class="tagline">A project tracker that runs on your own machine</p>
+    </div>
+  </section>
+  <div class='prose'><p>Epics, stories, bugs and tech debt across every project, in a board that opens instantly and works with no network.</p><p>There is no server and no account. The whole database is one SQLite file in your home directory, which means it is yours, it is greppable, and backing it up is copying a file.</p><p>Four themes including a sepia reading mode, tight 2–6dp corners, and a high-contrast vibe for when the room is bright.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · Lair-2.0.1.zip</div>
+    <div class="facts">2.0.1 · 112 MB · 2026-09-26 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip">Download</a>
+  
+</div><div class='prose'><p>Lair 2.0.1 — the first build published to the release channel.</p><p>Until now Lair was installed by a script that overwrote <code class='inline'>/Applications/Lair.app</code> on the machine it was built on. This is the same app, packaged so it can be handed to somebody else and kept current by Depot.</p><p><strong>Installing</strong></p><ul><li>Unzip and drag to Applications, or let [Depot](../depot/) do it — Depot</li></ul><p>replaces the bundle atomically and quits a running copy first, which a manual drag does not.</p><ul><li>Your board lives in <code class='inline'>~/.undercurrent/lair/db/lair.db</code> and is untouched by an</li></ul><p>update. It is one SQLite file: copying it is a backup.</p><p><strong>First launch</strong></p><p>This build is ad-hoc signed rather than notarised, so macOS asks once. Open <strong>System Settings → Privacy &amp; Security</strong> and click <strong>Open Anyway</strong>. Installing through Depot skips this entirely — a Depot install carries no quarantine flag.</p><p><strong>Note on size</strong></p><p>180 MB unpacked. Lair is a Compose Desktop app and ships its own Java runtime, so the download is what it is. Nothing is downloaded at first run.</p></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/lair/appcast.json</td></tr></table><pre>shasum -a 256 Lair-2.0.1.zip
+# 573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>2.0.1 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-26</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip'>ZIP</a></td><td class='h'>573f2712f02843feb426fdb67cbfcdfd</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

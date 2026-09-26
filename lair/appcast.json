@@ -1,0 +1,21 @@
+{
+  "app": "lair",
+  "channel": "stable",
+  "latest": {
+    "version": "2.0.1",
+    "published": "2026-09-26T21:34:45Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/lair-v2.0.1",
+    "assets": [
+      {
+        "name": "Lair-2.0.1.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip",
+        "sha256": "573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f",
+        "size": 117858548
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Lair 2.0.1 \u2014 the first build published to the release channel.\n\nUntil now Lair was installed by a script that overwrote `/Applications/Lair.app`\non the machine it was built on. This is the same app, packaged so it can be\nhanded to somebody else and kept current by Depot.\n\n**Installing**\n\n- Unzip and drag to Applications, or let [Depot](../depot/) do it \u2014 Depot\n  replaces the bundle atomically and quits a running copy first, which a manual\n  drag does not.\n- Your board lives in `~/.undercurrent/lair/db/lair.db` and is untouched by an\n  update. It is one SQLite file: copying it is a backup.\n\n**First launch**\n\nThis build is ad-hoc signed rather than notarised, so macOS asks once. Open\n**System Settings \u2192 Privacy & Security** and click **Open Anyway**. Installing\nthrough Depot skips this entirely \u2014 a Depot install carries no quarantine flag.\n\n**Note on size**\n\n180 MB unpacked. Lair is a Compose Desktop app and ships its own Java runtime, so\nthe download is what it is. Nothing is downloaded at first run.\n",
+    "channelSignature": "UX5zQDC/0Mc+lp3qeaqfpJPul1/mBcvGVvruhm5tPcLzogyizqfPYbkeC3l6DJA5MREcmwlr09xoHKtL7Ud9CQ==",
+    "channelSignedAsset": "Lair-2.0.1.zip"
+  }
+}

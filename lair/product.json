@@ -1,0 +1,11 @@
+{
+  "slug": "lair",
+  "name": "Lair",
+  "tagline": "A project tracker that runs on your own machine",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.lair",
+  "description": "Epics, stories, bugs and tech debt across every project, in a board that opens instantly and works with no network.\n\nThere is no server and no account. The whole database is one SQLite file in your home directory, which means it is yours, it is greppable, and backing it up is copying a file.\n\nFour themes including a sepia reading mode, tight 2–6dp corners, and a high-contrast vibe for when the room is bright.",
+  "homepage": "https://undercurrent.ai"
+}
