@@ -1,0 +1,21 @@
+{
+  "app": "adjudica",
+  "channel": "stable",
+  "latest": {
+    "version": "1.8.0",
+    "published": "2026-09-26T22:06:37Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-v1.8.0",
+    "assets": [
+      {
+        "name": "Adjudica-1.8.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
+        "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
+        "size": 120560922
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Adjudica 1.8.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "XKBO4+u5CM2w6OiPJ4P+eK53ZSjF1zP58tll+H7ZUruLoCQTH2PhUFz8NEpUzcUwN5QJr8XwZXnvBbEOitjeBA==",
+    "channelSignedAsset": "Adjudica-1.8.0.zip"
+  }
+}

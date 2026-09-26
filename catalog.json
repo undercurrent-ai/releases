@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:05:52Z",
+  "generated": "2026-09-26T22:06:38Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 8,
+    "products": 9,
     "platforms": {
-      "macos": 8,
+      "macos": 9,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -18,6 +18,73 @@
     }
   },
   "products": [
+    {
+      "slug": "adjudica",
+      "name": "Adjudica",
+      "tagline": "Rank anything by comparing two things at a time",
+      "description": "Deciding what you actually prefer out of forty things is hard. Deciding which of two things you prefer is easy. Adjudica turns the first problem into a lot of the second one, and keeps an ELO rating for every item as you go.\n\nImport a list as text or a folder of photos, then answer pairs. Rankings are fairness-filtered rather than raw: confidence shrinkage pulls items with few comparisons toward the middle instead of letting one lucky win crown them, and outlier dampening stops a single strange judgement from dominating. Fair, Raw and 0-100 views are all available, because which one is honest depends on how far through you are.\n\nGroupings let you start a new trial from a set of photos, clone an existing one with or without carrying scores over, or extend one with new entrants. Items can be edited mid-trial without discarding the comparisons already made.",
+      "category": "Productivity",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "com.factory.adjudica",
+      "updated": "2026-09-26T22:06:37Z",
+      "platforms": {
+        "macos": {
+          "manifest": "adjudica/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/adjudica/appcast.json",
+          "version": "1.8.0",
+          "published": "2026-09-26T22:06:37Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-v1.8.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Adjudica-1.8.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
+              "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
+              "size": 120560922
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Adjudica-1.8.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
+            "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
+            "size": 120560922
+          },
+          "signed": false,
+          "notes": "Adjudica 1.8.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "XKBO4+u5CM2w6OiPJ4P+eK53ZSjF1zP58tll+H7ZUruLoCQTH2PhUFz8NEpUzcUwN5QJr8XwZXnvBbEOitjeBA==",
+          "versions": [
+            {
+              "version": "1.8.0",
+              "published": "2026-09-26T22:06:37Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-v1.8.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Adjudica-1.8.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
+                  "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
+                  "size": 120560922
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Adjudica-1.8.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
+                "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
+                "size": 120560922
+              }
+            }
+          ]
+        }
+      }
+    },
     {
       "slug": "breach_radar",
       "name": "BreachRadar",

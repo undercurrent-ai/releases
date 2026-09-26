@@ -1,0 +1,11 @@
+{
+  "slug": "adjudica",
+  "name": "Adjudica",
+  "tagline": "Rank anything by comparing two things at a time",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "com.factory.adjudica",
+  "description": "Deciding what you actually prefer out of forty things is hard. Deciding which of two things you prefer is easy. Adjudica turns the first problem into a lot of the second one, and keeps an ELO rating for every item as you go.\n\nImport a list as text or a folder of photos, then answer pairs. Rankings are fairness-filtered rather than raw: confidence shrinkage pulls items with few comparisons toward the middle instead of letting one lucky win crown them, and outlier dampening stops a single strange judgement from dominating. Fair, Raw and 0-100 views are all available, because which one is honest depends on how far through you are.\n\nGroupings let you start a new trial from a set of photos, clone an existing one with or without carrying scores over, or extend one with new entrants. Items can be edited mid-trial without discarding the comparisons already made.",
+  "homepage": "https://undercurrent.ai"
+}
