@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-30T14:43:50Z",
+  "generated": "2026-09-30T14:51:29Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -97,43 +97,71 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "ai.undercurrent.breachradar",
-      "updated": "2026-09-30T14:43:42Z",
+      "updated": "2026-09-30T14:51:22Z",
       "platforms": {
         "macos": {
           "manifest": "breach_radar/appcast.json",
           "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/breach_radar/appcast.json",
-          "version": "0.3.1",
-          "published": "2026-09-30T14:43:42Z",
-          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.3.1",
+          "version": "0.3.2",
+          "published": "2026-09-30T14:51:22Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.3.2",
           "channel": "stable",
           "assets": [
             {
               "role": "zip",
-              "name": "BreachRadar-0.3.1.zip",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.1/BreachRadar-0.3.1.zip",
-              "sha256": "f20cbf1cdfde159a1f58447551420e77f6f972b3ad3cd1071dc2451805429117",
-              "size": 645524
+              "name": "BreachRadar-0.3.2.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.zip",
+              "sha256": "deeaec65070fab6fc834fcbea761000605b7b314de0b47eff11332629b5de042",
+              "size": 645859
             },
             {
               "role": "dmg",
-              "name": "BreachRadar-0.3.1.dmg",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.1/BreachRadar-0.3.1.dmg",
+              "name": "BreachRadar-0.3.2.dmg",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.dmg",
               "sha256": null,
               "size": null
             }
           ],
           "primary": {
             "role": "dmg",
-            "name": "BreachRadar-0.3.1.dmg",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.1/BreachRadar-0.3.1.dmg",
+            "name": "BreachRadar-0.3.2.dmg",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.dmg",
             "sha256": null,
             "size": null
           },
           "signed": true,
-          "notes": "# Breach Radar 0.3.1\n\nReserving a workspace speaks the outreach v2 contract\n(`undercurrent-ai/site` \u2192 `docs/OUTREACH_ACQUISITION_API.md`).\n\n- **One claim code per contact.** When a card has contacts, a new checkbox on\n  the Workspace tab gives each of them their own code, with a role suggested\n  from their title (CISO, Deputy CISO, Head of IR, IT Director \u2192 admin; others\n  \u2192 member). The codes are shown once, with copy buttons, and are not stored on\n  this Mac \u2014 Helm \u2192 Acquisition reveals them again when needed.\n- **The server picks the subdomain.** Leave the field blank and the name is\n  reduced to a short, distinctive slug (\"Sutter Health Vallejo\" \u2192\n  `sutter-vallejo`); type one to override it.\n- **Never a second workspace for the same company.** Reserving a company that\n  already has a workspace \u2014 the same card again, or the same company from a\n  different feed \u2014 adds codes for new people only.\n- **Provenance travels with it.** Name, industry, ICP score, incident kind,\n  filing date and board column go up as workspace metadata, so \"why does this\n  company have one\" is answerable from the console.\n\nUnchanged: with the checkbox off, the workspace carries the single org-level\ncode the third-touch template reads, exactly as in 0.3.0. A v1 server still\naccepts everything this version sends.\n\n## The store moved\n\nBreach Radar is on the house app-data standard now. Your board lives at\n`~/.undercurrent/db/breachradar/` and the app no longer contains any database\ncode \u2014 it shells to `cli/breachradar`, which owns the store.\n\nNothing to do, and nothing to lose: the first launch imports your existing\nboard, and the old `~/.undercurrent/breachradar/breachradar.sqlite3` is left\nexactly where it is and never written to again.\n\nWhat you get for it: every launch, release and install is recorded, so\n`ucdb ls` can tell you which build you are running and since when; every write\ncarries an audit entry; and a Claude session can now read and repair exactly\nthe board you are looking at, with the same code the app uses, instead of a\nsecond reader that has to be kept in step.\n\nOne safety change worth knowing about. The page hands the whole board to the\nstore on every change, which means a caller holding a short board is implicitly\nasking for everything missing from it to be deleted. The store now refuses a\nsave that would remove more than about a third of the board, and says so. It\ncaught a real bug during this migration \u2014 a load that ran a fraction of a second\ntoo early returned an empty board, and the next save asked to remove 84 cards.\nDeletions are tombstones regardless, so nothing was actually lost.",
+          "notes": "# Breach Radar 0.3.2\n\nA packaging fix. If you already have 0.3.1 running, nothing about the app\nchanges \u2014 but 0.3.1 could not be installed by anyone who downloaded it, so it\nshould not be passed on.\n\n**Downloads open properly again.** The 0.3.1 bundle was signed before the\ndatabase CLI was copied into it, which invalidates the signature. That is\ninvisible on the machine that built the app \u2014 a local build carries no\nquarantine flag, so macOS never checks \u2014 and fatal everywhere else: a\ndownloaded copy reports *\"BreachRadar is damaged and can't be opened\"*, which\nright-click \u2192 Open cannot get past. The CLI is now copied in before signing,\nand the build refuses to continue if the signature does not verify, so this\ncannot ship again without someone noticing.\n\nDownloading Breach Radar for the first time still shows the usual\n*\"unidentified developer\"* prompt, because the app is signed ad-hoc rather than\nwith an Apple Developer ID. Right-click the app and choose **Open** to get past\nthat one; it is asked once, per machine.\n\nEverything in 0.3.1 \u2014 per-contact claim codes, server-chosen subdomains, and\nthe move of your board to `~/.undercurrent/db/breachradar/` \u2014 is unchanged and\ndescribed in `NOTES-0.3.1.md`.",
           "minSystem": "11.0",
-          "channelSignature": "7h+CyAbO1oH+ElWIgSJ/aW5eeBBFkrtbFMdzckzOO4AcIX3EtZ1PCq/Lsf1wqzqxaF+f4HkJrNIymSF5LqkVCw==",
+          "channelSignature": "FKfx4LH99R/sT91+iITj8ug7wPUNg7fme/E+/1l0Ntd4E780pvfMcHzmDPsA8qSZBVuApYU782OzpzIUMz+RDg==",
           "versions": [
+            {
+              "version": "0.3.2",
+              "published": "2026-09-30T14:51:22Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.3.2",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "BreachRadar-0.3.2.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.zip",
+                  "sha256": "deeaec65070fab6fc834fcbea761000605b7b314de0b47eff11332629b5de042",
+                  "size": 645859
+                },
+                {
+                  "role": "dmg",
+                  "name": "BreachRadar-0.3.2.dmg",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.dmg",
+                  "sha256": null,
+                  "size": null
+                }
+              ],
+              "primary": {
+                "role": "dmg",
+                "name": "BreachRadar-0.3.2.dmg",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.2/BreachRadar-0.3.2.dmg",
+                "sha256": null,
+                "size": null
+              }
+            },
             {
               "version": "0.3.1",
               "published": "2026-09-30T14:43:42Z",
