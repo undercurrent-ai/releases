@@ -1,0 +1,21 @@
+{
+  "app": "tunnel_bore",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.0",
+    "published": "2026-09-30T15:43:18Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/tunnel_bore-v0.1.0",
+    "assets": [
+      {
+        "name": "Tunnel Bore-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+        "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
+        "size": 329911
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Tunnel Bore 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "3ahl+dEHJmCBaujgCanLQFVxnXK6DnDlSZZjbTwN+ndiirboutorIC7rf/5uXjCNAH7RkYkQ7WimzwamPmxjAQ==",
+    "channelSignedAsset": "Tunnel Bore-0.1.0.zip"
+  }
+}

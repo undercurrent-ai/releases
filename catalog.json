@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-30T14:51:29Z",
+  "generated": "2026-09-30T15:43:19Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 9,
+    "products": 10,
     "platforms": {
-      "macos": 9,
+      "macos": 10,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -713,6 +713,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/pitch_room-v0.1.0/PitchRoom-0.1.0.zip",
                 "sha256": "71b9e57067cbadf743af3beef3c40befa8e998378deeff838a22a21135c6bb2f",
                 "size": 191859
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "tunnel_bore",
+      "name": "Tunnel Bore",
+      "tagline": "Hand long jobs to a machine that never sleeps, without being rude about it",
+      "description": "A laptop is the wrong place to run something that takes four hours. Tunnel Bore joins a roaming Mac to an always-on machine over a self-hosted WireGuard overlay, and gives you a queue there that does not care whether the lid is open.\n\n`bore push` hands a job to the node. `bore status` is the fleet on one screen, cached so it still tells you something when the node is unreachable. `bore drain` says you are going offline on purpose, which is different from having vanished. `bore doctor` says what is wired and what is not, in the order you should fix it.\n\n**The borrowed-machine part is the point.** The always-on node is often a household PC somebody else games on. A courtesy warden watches for that and yields \u2014 the queue pauses itself rather than competing for a GPU, and resumes when the machine is idle again. It detects rather than asks, because a tool that needs permission every time gets turned off.\n\nSecrets never rest on the node. Anything stored there is sealed to a public key whose private half stays in the Mac's keychain, so a node that is lost or reinstalled leaks nothing. The node kit ships the WireGuard generator, the sealed vault and the setup steps for both Linux and Windows.",
+      "category": "Developer tools",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.tunnelbore",
+      "updated": "2026-09-30T15:43:18Z",
+      "platforms": {
+        "macos": {
+          "manifest": "tunnel_bore/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/tunnel_bore/appcast.json",
+          "version": "0.1.0",
+          "published": "2026-09-30T15:43:18Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/tunnel_bore-v0.1.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Tunnel Bore-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+              "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
+              "size": 329911
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Tunnel Bore-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+            "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
+            "size": 329911
+          },
+          "signed": false,
+          "notes": "Tunnel Bore 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "3ahl+dEHJmCBaujgCanLQFVxnXK6DnDlSZZjbTwN+ndiirboutorIC7rf/5uXjCNAH7RkYkQ7WimzwamPmxjAQ==",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "published": "2026-09-30T15:43:18Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/tunnel_bore-v0.1.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Tunnel Bore-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+                  "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
+                  "size": 329911
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Tunnel Bore-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+                "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
+                "size": 329911
               }
             }
           ]

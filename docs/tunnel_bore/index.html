@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tunnel Bore — Undercurrent Depot</title>
+<meta name="description" content="Hand long jobs to a machine that never sleeps, without being rude about it">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">TB</div>
+    <div style="min-width:0">
+      <h1>Tunnel Bore</h1>
+      <p class="tagline">Hand long jobs to a machine that never sleeps, without being rude about it</p>
+    </div>
+  </section>
+  <div class='prose'><p>A laptop is the wrong place to run something that takes four hours. Tunnel Bore joins a roaming Mac to an always-on machine over a self-hosted WireGuard overlay, and gives you a queue there that does not care whether the lid is open.</p><p><code class='inline'>bore push</code> hands a job to the node. <code class='inline'>bore status</code> is the fleet on one screen, cached so it still tells you something when the node is unreachable. <code class='inline'>bore drain</code> says you are going offline on purpose, which is different from having vanished. <code class='inline'>bore doctor</code> says what is wired and what is not, in the order you should fix it.</p><p><strong>The borrowed-machine part is the point.</strong> The always-on node is often a household PC somebody else games on. A courtesy warden watches for that and yields — the queue pauses itself rather than competing for a GPU, and resumes when the machine is idle again. It detects rather than asks, because a tool that needs permission every time gets turned off.</p><p>Secrets never rest on the node. Anything stored there is sealed to a public key whose private half stays in the Mac&#x27;s keychain, so a node that is lost or reinstalled leaks nothing. The node kit ships the WireGuard generator, the sealed vault and the setup steps for both Linux and Windows.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · Tunnel Bore-0.1.0.zip</div>
+    <div class="facts">0.1.0 · 322 KB · 2026-09-30 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip">Download</a>
+  
+</div><div class='prose'><p>Tunnel Bore 0.1.0, published to the Undercurrent release channel.</p><p>Install with [Depot](../depot/), which replaces the bundle atomically and quits a running copy first, or unzip and drag to Applications.</p><p>This build is ad-hoc signed rather than notarised, so a first launch from a download asks once — <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. A Depot install carries no quarantine flag and never meets that prompt.</p></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/tunnel_bore/appcast.json</td></tr></table><pre>shasum -a 256 Tunnel Bore-0.1.0.zip
+# 586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.1.0 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-30</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip'>ZIP</a></td><td class='h'>586f3a883d7102ae4c0555a2294738f5</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>
