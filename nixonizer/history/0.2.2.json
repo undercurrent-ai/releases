@@ -1,0 +1,21 @@
+{
+  "app": "nixonizer",
+  "channel": "stable",
+  "latest": {
+    "version": "0.2.2",
+    "published": "2026-09-30T15:44:13Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/nixonizer-v0.2.2",
+    "assets": [
+      {
+        "name": "Nixonizer-0.2.2.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/nixonizer-v0.2.2/Nixonizer-0.2.2.zip",
+        "sha256": "7645aed1ce2ac4870db49a0d0056c03414d84cad4b9819693b224f15f8eb0331",
+        "size": 1441970
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Nixonizer 0.2.2, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "2wvbkgOVPnS14fGQxeW1TvP/0UfIuJp/qaSO74dSOAu1DHwLnVLeAPDXfwsyjINyp1puKKjq8V7/axXFx6P2Bw==",
+    "channelSignedAsset": "Nixonizer-0.2.2.zip"
+  }
+}

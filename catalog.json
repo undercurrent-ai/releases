@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-30T15:43:51Z",
+  "generated": "2026-09-30T15:44:14Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 12,
+    "products": 13,
     "platforms": {
-      "macos": 12,
+      "macos": 13,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -713,6 +713,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
                 "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
                 "size": 228702
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "nixonizer",
+      "name": "Nixonizer",
+      "tagline": "Every recorded call, with the transcript and the screenshots back in sync",
+      "description": "A recorded call leaves a pile of separate things: an audio file, a transcript in several stages, a report, and the screenshots you took while it was happening. Separately they are nearly useless \u2014 the screenshot that explains a sentence is forty files away from it. Nixonizer indexes them as one recording and plays it back together: the transcript follows the audio, and each screenshot surfaces at the moment it stops being a mystery.\n\nScreenshots are matched to the call by capture time, which is why the start time is editable and re-matchable \u2014 a clock that was off by a minute puts every image in the wrong place. Duplicates are detected and only ever moved on an explicit re-match, never as a side effect of something else.\n\nAnything can be dropped onto a recording \u2014 files, images, folders, links \u2014 and stays with it. **Deeper analysis with Claude** opens a dedicated session seeded with the call's context, which writes a report and registers it back onto the recording, so the analysis lives beside what it was about rather than in a chat log.\n\nIt does not own the recordings. The transcriber that produced them keeps its folders and its rebuild rules, and Nixonizer keeps your state \u2014 tags, stars, notes, titles, play position, attachments \u2014 in its own store, so nothing you added is at risk when a report is rebuilt.",
+      "category": "Productivity",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.nixonizer",
+      "updated": "2026-09-30T15:44:13Z",
+      "platforms": {
+        "macos": {
+          "manifest": "nixonizer/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/nixonizer/appcast.json",
+          "version": "0.2.2",
+          "published": "2026-09-30T15:44:13Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/nixonizer-v0.2.2",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Nixonizer-0.2.2.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/nixonizer-v0.2.2/Nixonizer-0.2.2.zip",
+              "sha256": "7645aed1ce2ac4870db49a0d0056c03414d84cad4b9819693b224f15f8eb0331",
+              "size": 1441970
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Nixonizer-0.2.2.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/nixonizer-v0.2.2/Nixonizer-0.2.2.zip",
+            "sha256": "7645aed1ce2ac4870db49a0d0056c03414d84cad4b9819693b224f15f8eb0331",
+            "size": 1441970
+          },
+          "signed": false,
+          "notes": "Nixonizer 0.2.2, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "2wvbkgOVPnS14fGQxeW1TvP/0UfIuJp/qaSO74dSOAu1DHwLnVLeAPDXfwsyjINyp1puKKjq8V7/axXFx6P2Bw==",
+          "versions": [
+            {
+              "version": "0.2.2",
+              "published": "2026-09-30T15:44:13Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/nixonizer-v0.2.2",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Nixonizer-0.2.2.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/nixonizer-v0.2.2/Nixonizer-0.2.2.zip",
+                  "sha256": "7645aed1ce2ac4870db49a0d0056c03414d84cad4b9819693b224f15f8eb0331",
+                  "size": 1441970
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Nixonizer-0.2.2.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/nixonizer-v0.2.2/Nixonizer-0.2.2.zip",
+                "sha256": "7645aed1ce2ac4870db49a0d0056c03414d84cad4b9819693b224f15f8eb0331",
+                "size": 1441970
               }
             }
           ]

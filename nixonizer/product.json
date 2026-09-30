@@ -1,0 +1,11 @@
+{
+  "slug": "nixonizer",
+  "name": "Nixonizer",
+  "tagline": "Every recorded call, with the transcript and the screenshots back in sync",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.nixonizer",
+  "description": "A recorded call leaves a pile of separate things: an audio file, a transcript in several stages, a report, and the screenshots you took while it was happening. Separately they are nearly useless — the screenshot that explains a sentence is forty files away from it. Nixonizer indexes them as one recording and plays it back together: the transcript follows the audio, and each screenshot surfaces at the moment it stops being a mystery.\n\nScreenshots are matched to the call by capture time, which is why the start time is editable and re-matchable — a clock that was off by a minute puts every image in the wrong place. Duplicates are detected and only ever moved on an explicit re-match, never as a side effect of something else.\n\nAnything can be dropped onto a recording — files, images, folders, links — and stays with it. **Deeper analysis with Claude** opens a dedicated session seeded with the call's context, which writes a report and registers it back onto the recording, so the analysis lives beside what it was about rather than in a chat log.\n\nIt does not own the recordings. The transcriber that produced them keeps its folders and its rebuild rules, and Nixonizer keeps your state — tags, stars, notes, titles, play position, attachments — in its own store, so nothing you added is at risk when a report is rebuilt.",
+  "homepage": "https://undercurrent.ai"
+}
