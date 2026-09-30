@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-30T15:43:19Z",
+  "generated": "2026-09-30T15:43:35Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -8,9 +8,9 @@
     "catalogUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/catalog.json"
   },
   "counts": {
-    "products": 10,
+    "products": 11,
     "platforms": {
-      "macos": 10,
+      "macos": 11,
       "android": 0,
       "linux": 0,
       "windows": 0,
@@ -579,6 +579,73 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip",
                 "sha256": "573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f",
                 "size": 117858548
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "laterbase",
+      "name": "Laterbase",
+      "tagline": "Park the good idea that would have derailed your afternoon",
+      "description": "Mid-task, a better idea arrives. Chasing it costs the afternoon; dropping it loses the idea. Laterbase takes the third option: park it with enough detail that it is still actionable in three weeks, and get back to work.\n\nA parked excursion is not a one-line note. It carries the requirements you would have had to rediscover \u2014 what it is for, what it depends on, what finishing looks like \u2014 as a checklist an AI session can execute from and tick off as it goes. A board shows what is parked, what is running and what is done; a calendar shows how long each one actually took against what you thought.\n\nParking works from wherever you already are. The `lb` command parks and ticks from a terminal or an AI session, and the app is a view over the same store, so nothing has to be re-entered to be visible.\n\nSync is end-to-end sealed. The board replicates through a plain object store \u2014 segments are encrypted with a key that stays in the keychain, so the storage provider holds ciphertext and nothing else. Because every write has been in an operation log from the first one, adding a second device needs no migration.",
+      "category": "Productivity",
+      "publisher": "Undercurrent",
+      "homepage": "https://undercurrent.ai",
+      "icon": null,
+      "screenshots": [],
+      "kind": "app",
+      "bundleId": "ai.undercurrent.laterbase",
+      "updated": "2026-09-30T15:43:35Z",
+      "platforms": {
+        "macos": {
+          "manifest": "laterbase/appcast.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/laterbase/appcast.json",
+          "version": "0.2.4",
+          "published": "2026-09-30T15:43:35Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/laterbase-v0.2.4",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "zip",
+              "name": "Laterbase-0.2.4.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/laterbase-v0.2.4/Laterbase-0.2.4.zip",
+              "sha256": "0fa1b67bc0e5ef512d67f8eae070d6a2d4b38cc4330aafad2c4d84ac408c4b74",
+              "size": 333958
+            }
+          ],
+          "primary": {
+            "role": "zip",
+            "name": "Laterbase-0.2.4.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/laterbase-v0.2.4/Laterbase-0.2.4.zip",
+            "sha256": "0fa1b67bc0e5ef512d67f8eae070d6a2d4b38cc4330aafad2c4d84ac408c4b74",
+            "size": 333958
+          },
+          "signed": false,
+          "notes": "Laterbase 0.2.4, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+          "minSystem": "11.0",
+          "channelSignature": "cYm+PuW8Q2AroqGZsPWfxplJnq7t8CvHUZdcaj+ehbfUB7m9U/N/0LoKkxL6/HKve1k7WRjPWDgHVseMyeIcAw==",
+          "versions": [
+            {
+              "version": "0.2.4",
+              "published": "2026-09-30T15:43:35Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/laterbase-v0.2.4",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "Laterbase-0.2.4.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/laterbase-v0.2.4/Laterbase-0.2.4.zip",
+                  "sha256": "0fa1b67bc0e5ef512d67f8eae070d6a2d4b38cc4330aafad2c4d84ac408c4b74",
+                  "size": 333958
+                }
+              ],
+              "primary": {
+                "role": "zip",
+                "name": "Laterbase-0.2.4.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/laterbase-v0.2.4/Laterbase-0.2.4.zip",
+                "sha256": "0fa1b67bc0e5ef512d67f8eae070d6a2d4b38cc4330aafad2c4d84ac408c4b74",
+                "size": 333958
               }
             }
           ]

@@ -1,0 +1,11 @@
+{
+  "slug": "laterbase",
+  "name": "Laterbase",
+  "tagline": "Park the good idea that would have derailed your afternoon",
+  "category": "Productivity",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.laterbase",
+  "description": "Mid-task, a better idea arrives. Chasing it costs the afternoon; dropping it loses the idea. Laterbase takes the third option: park it with enough detail that it is still actionable in three weeks, and get back to work.\n\nA parked excursion is not a one-line note. It carries the requirements you would have had to rediscover — what it is for, what it depends on, what finishing looks like — as a checklist an AI session can execute from and tick off as it goes. A board shows what is parked, what is running and what is done; a calendar shows how long each one actually took against what you thought.\n\nParking works from wherever you already are. The `lb` command parks and ticks from a terminal or an AI session, and the app is a view over the same store, so nothing has to be re-entered to be visible.\n\nSync is end-to-end sealed. The board replicates through a plain object store — segments are encrypted with a key that stays in the keychain, so the storage provider holds ciphertext and nothing else. Because every write has been in an operation log from the first one, adding a second device needs no migration.",
+  "homepage": "https://undercurrent.ai"
+}

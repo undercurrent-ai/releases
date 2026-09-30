@@ -1,0 +1,21 @@
+{
+  "app": "laterbase",
+  "channel": "stable",
+  "latest": {
+    "version": "0.2.4",
+    "published": "2026-09-30T15:43:35Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/laterbase-v0.2.4",
+    "assets": [
+      {
+        "name": "Laterbase-0.2.4.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/laterbase-v0.2.4/Laterbase-0.2.4.zip",
+        "sha256": "0fa1b67bc0e5ef512d67f8eae070d6a2d4b38cc4330aafad2c4d84ac408c4b74",
+        "size": 333958
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "Laterbase 0.2.4, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "cYm+PuW8Q2AroqGZsPWfxplJnq7t8CvHUZdcaj+ehbfUB7m9U/N/0LoKkxL6/HKve1k7WRjPWDgHVseMyeIcAw==",
+    "channelSignedAsset": "Laterbase-0.2.4.zip"
+  }
+}
