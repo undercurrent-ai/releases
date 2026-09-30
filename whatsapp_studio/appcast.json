@@ -1,0 +1,21 @@
+{
+  "app": "whatsapp_studio",
+  "channel": "stable",
+  "latest": {
+    "version": "0.1.1",
+    "published": "2026-09-30T15:43:51Z",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/whatsapp_studio-v0.1.1",
+    "assets": [
+      {
+        "name": "WhatsApp Developer Studio-0.1.1.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip",
+        "sha256": "6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2",
+        "size": 420522
+      }
+    ],
+    "minSystem": "11.0",
+    "notes": "WhatsApp Developer Studio 0.1.1, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
+    "channelSignature": "3oCVlY1EsYshk/mhWaWxg6z7rEhKucI2Pc29C7UZD0ETV9IUBye8Izdl35TKoFFL4JhW8pjNNHGYh+8jGFXSDg==",
+    "channelSignedAsset": "WhatsApp Developer Studio-0.1.1.zip"
+  }
+}

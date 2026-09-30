@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsApp Developer Studio — Undercurrent Depot</title>
+<meta name="description" content="Bring up a WhatsApp pager channel without guessing at Meta&#x27;s rules">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">WD</div>
+    <div style="min-width:0">
+      <h1>WhatsApp Developer Studio</h1>
+      <p class="tagline">Bring up a WhatsApp pager channel without guessing at Meta&#x27;s rules</p>
+    </div>
+  </section>
+  <div class='prose'><p>Getting a WhatsApp Business number to the point where it can page a human on call is two dozen steps across four Meta surfaces, and the failure mode is discovering on the night it matters that a template was never approved. This is the desk for that work: the checklist, the identifiers, the console and the load tests in one place, each step recorded as it lands.</p><p><strong>Accounts</strong> holds every id you accumulate — developer login, portfolio, app, business account, phone-number ids, test recipients — each with its own journal, because the id is never the hard part to find again; the reason you chose it is. <strong>Console</strong> sends in mock, test or live mode, simulates inbound messages, previews what a page looks like on each channel, and keeps the message and webhook logs. The mock API and webhook receiver run as managed helpers, so the whole loop can be exercised before a real number exists.</p><p><strong>Load Lab</strong> runs named scenarios against that private mock under Meta&#x27;s published limits, and records the verdict rather than leaving it in a terminal you closed.</p><p>It is built for a pager ladder, not a chat app: detail stays on the secure channel, and every other rung carries a content-free page that sends the recipient back to it. <strong>Channels</strong> makes that explicit — a ceiling per channel for what class of payload may cross it, and an audit entry whenever a ceiling moves.</p><p>Credentials live in the macOS Keychain. Nothing secret is written to the app&#x27;s database.</p></div>
+  <h2 class='section'>macOS</h2><div class="dl">
+  <div class="what">
+    <div class="name">macOS · WhatsApp Developer Studio-0.1.1.zip</div>
+    <div class="facts">0.1.1 · 411 KB · 2026-09-30 · macOS 11.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip">Download</a>
+  
+</div><div class='prose'><p>WhatsApp Developer Studio 0.1.1, published to the Undercurrent release channel.</p><p>Install with [Depot](../depot/), which replaces the bundle atomically and quits a running copy first, or unzip and drag to Applications.</p><p>This build is ad-hoc signed rather than notarised, so a first launch from a download asks once — <strong>System Settings → Privacy &amp; Security → Open Anyway</strong>. A Depot install carries no quarantine flag and never meets that prompt.</p></div><div class="note"><strong>First launch.</strong>
+  These builds are ad-hoc signed, so macOS asks once. The
+  <a href="../mac/index.html">one-time steps are here</a> — later updates are
+  installed by the app itself and never hit that prompt.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/whatsapp_studio/appcast.json</td></tr></table><pre>shasum -a 256 WhatsApp Developer Studio-0.1.1.zip
+# 6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every macOS version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.1.1 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-09-30</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip'>ZIP</a></td><td class='h'>6f4b6034e85d72952cd374ea9f813c1b</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

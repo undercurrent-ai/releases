@@ -1,0 +1,11 @@
+{
+  "slug": "whatsapp_studio",
+  "name": "WhatsApp Developer Studio",
+  "tagline": "Bring up a WhatsApp pager channel without guessing at Meta's rules",
+  "category": "Developer tools",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "bundleId": "ai.undercurrent.whatsappdevstudio",
+  "description": "Getting a WhatsApp Business number to the point where it can page a human on call is two dozen steps across four Meta surfaces, and the failure mode is discovering on the night it matters that a template was never approved. This is the desk for that work: the checklist, the identifiers, the console and the load tests in one place, each step recorded as it lands.\n\n**Accounts** holds every id you accumulate — developer login, portfolio, app, business account, phone-number ids, test recipients — each with its own journal, because the id is never the hard part to find again; the reason you chose it is. **Console** sends in mock, test or live mode, simulates inbound messages, previews what a page looks like on each channel, and keeps the message and webhook logs. The mock API and webhook receiver run as managed helpers, so the whole loop can be exercised before a real number exists.\n\n**Load Lab** runs named scenarios against that private mock under Meta's published limits, and records the verdict rather than leaving it in a terminal you closed.\n\nIt is built for a pager ladder, not a chat app: detail stays on the secure channel, and every other rung carries a content-free page that sends the recipient back to it. **Channels** makes that explicit — a ceiling per channel for what class of payload may cross it, and an audit entry whenever a ceiling moves.\n\nCredentials live in the macOS Keychain. Nothing secret is written to the app's database.",
+  "homepage": "https://undercurrent.ai"
+}
