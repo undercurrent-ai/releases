@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-30T15:44:14Z",
+  "generated": "2026-09-30T15:47:17Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -676,23 +676,23 @@
           "assets": [
             {
               "role": "zip",
-              "name": "Necessary Actions-0.1.0.zip",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+              "name": "Necessary.Actions-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary.Actions-0.1.0.zip",
               "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
               "size": 228702
             }
           ],
           "primary": {
             "role": "zip",
-            "name": "Necessary Actions-0.1.0.zip",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+            "name": "Necessary.Actions-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary.Actions-0.1.0.zip",
             "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
             "size": 228702
           },
           "signed": false,
           "notes": "Necessary Actions 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
           "minSystem": "11.0",
-          "channelSignature": "V5Ad7xf/GKxzleGNy4X6Ns3Rb3honXC9Ily9+5KSG047W+NKGt6Dw1ZlkiiJF5MxHFUnvFrbfvebdckPfkGCDg==",
+          "channelSignature": "tt2EoH7vlDFIhgzSrbRTSQbHp2oeIDQ3ZO6TLOZV+lZUlULvoNhkuxFkyapQrQk+IekFXPKBd8W43rXjsV0vBg==",
           "versions": [
             {
               "version": "0.1.0",
@@ -701,16 +701,16 @@
               "assets": [
                 {
                   "role": "zip",
-                  "name": "Necessary Actions-0.1.0.zip",
-                  "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+                  "name": "Necessary.Actions-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary.Actions-0.1.0.zip",
                   "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
                   "size": 228702
                 }
               ],
               "primary": {
                 "role": "zip",
-                "name": "Necessary Actions-0.1.0.zip",
-                "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+                "name": "Necessary.Actions-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary.Actions-0.1.0.zip",
                 "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
                 "size": 228702
               }
@@ -877,23 +877,23 @@
           "assets": [
             {
               "role": "zip",
-              "name": "Tunnel Bore-0.1.0.zip",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+              "name": "Tunnel.Bore-0.1.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel.Bore-0.1.0.zip",
               "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
               "size": 329911
             }
           ],
           "primary": {
             "role": "zip",
-            "name": "Tunnel Bore-0.1.0.zip",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+            "name": "Tunnel.Bore-0.1.0.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel.Bore-0.1.0.zip",
             "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
             "size": 329911
           },
           "signed": false,
           "notes": "Tunnel Bore 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
           "minSystem": "11.0",
-          "channelSignature": "3ahl+dEHJmCBaujgCanLQFVxnXK6DnDlSZZjbTwN+ndiirboutorIC7rf/5uXjCNAH7RkYkQ7WimzwamPmxjAQ==",
+          "channelSignature": "CFOx00MnD3+AajCya33VImU5wWFSRDf5PcwFyfaJz68Qhj3ikrsLBBpEi8sXAvFSMlYeFsKtCshHoeJ5qOE4AQ==",
           "versions": [
             {
               "version": "0.1.0",
@@ -902,16 +902,16 @@
               "assets": [
                 {
                   "role": "zip",
-                  "name": "Tunnel Bore-0.1.0.zip",
-                  "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+                  "name": "Tunnel.Bore-0.1.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel.Bore-0.1.0.zip",
                   "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
                   "size": 329911
                 }
               ],
               "primary": {
                 "role": "zip",
-                "name": "Tunnel Bore-0.1.0.zip",
-                "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel Bore-0.1.0.zip",
+                "name": "Tunnel.Bore-0.1.0.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/tunnel_bore-v0.1.0/Tunnel.Bore-0.1.0.zip",
                 "sha256": "586f3a883d7102ae4c0555a2294738f51b9a82d301a775fafe48b1b4c15b8290",
                 "size": 329911
               }
@@ -944,23 +944,23 @@
           "assets": [
             {
               "role": "zip",
-              "name": "WhatsApp Developer Studio-0.1.1.zip",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip",
+              "name": "WhatsApp.Developer.Studio-0.1.1.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp.Developer.Studio-0.1.1.zip",
               "sha256": "6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2",
               "size": 420522
             }
           ],
           "primary": {
             "role": "zip",
-            "name": "WhatsApp Developer Studio-0.1.1.zip",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip",
+            "name": "WhatsApp.Developer.Studio-0.1.1.zip",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp.Developer.Studio-0.1.1.zip",
             "sha256": "6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2",
             "size": 420522
           },
           "signed": false,
           "notes": "WhatsApp Developer Studio 0.1.1, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
           "minSystem": "11.0",
-          "channelSignature": "3oCVlY1EsYshk/mhWaWxg6z7rEhKucI2Pc29C7UZD0ETV9IUBye8Izdl35TKoFFL4JhW8pjNNHGYh+8jGFXSDg==",
+          "channelSignature": "tOwcB6rA5WuECpefy/7lRN4SySnwHwx3Yj/jNl97YpTQ+EE1GQZwLESFFNfw5srA+CRbO0UFY+ckJeb1Y+GRAA==",
           "versions": [
             {
               "version": "0.1.1",
@@ -969,16 +969,16 @@
               "assets": [
                 {
                   "role": "zip",
-                  "name": "WhatsApp Developer Studio-0.1.1.zip",
-                  "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip",
+                  "name": "WhatsApp.Developer.Studio-0.1.1.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp.Developer.Studio-0.1.1.zip",
                   "sha256": "6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2",
                   "size": 420522
                 }
               ],
               "primary": {
                 "role": "zip",
-                "name": "WhatsApp Developer Studio-0.1.1.zip",
-                "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp Developer Studio-0.1.1.zip",
+                "name": "WhatsApp.Developer.Studio-0.1.1.zip",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/whatsapp_studio-v0.1.1/WhatsApp.Developer.Studio-0.1.1.zip",
                 "sha256": "6f4b6034e85d72952cd374ea9f813c1b6361abfac25d7f183ce40a3ea75a65a2",
                 "size": 420522
               }

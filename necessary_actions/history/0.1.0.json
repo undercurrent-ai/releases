@@ -7,15 +7,15 @@
     "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/necessary_actions-v0.1.0",
     "assets": [
       {
-        "name": "Necessary Actions-0.1.0.zip",
-        "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary Actions-0.1.0.zip",
+        "name": "Necessary.Actions-0.1.0.zip",
+        "url": "https://github.com/undercurrent-ai/releases/releases/download/necessary_actions-v0.1.0/Necessary.Actions-0.1.0.zip",
         "sha256": "02048870178a2bc3a372e5a4b89d04805119c582cbb35bfffb59f7fc07a68248",
         "size": 228702
       }
     ],
     "minSystem": "11.0",
     "notes": "Necessary Actions 0.1.0, published to the Undercurrent release channel.\n\nInstall with [Depot](../depot/), which replaces the bundle atomically and quits a\nrunning copy first, or unzip and drag to Applications.\n\nThis build is ad-hoc signed rather than notarised, so a first launch from a\ndownload asks once \u2014 **System Settings \u2192 Privacy & Security \u2192 Open Anyway**. A\nDepot install carries no quarantine flag and never meets that prompt.\n",
-    "channelSignature": "V5Ad7xf/GKxzleGNy4X6Ns3Rb3honXC9Ily9+5KSG047W+NKGt6Dw1ZlkiiJF5MxHFUnvFrbfvebdckPfkGCDg==",
-    "channelSignedAsset": "Necessary Actions-0.1.0.zip"
+    "channelSignature": "tt2EoH7vlDFIhgzSrbRTSQbHp2oeIDQ3ZO6TLOZV+lZUlULvoNhkuxFkyapQrQk+IekFXPKBd8W43rXjsV0vBg==",
+    "channelSignedAsset": "Necessary.Actions-0.1.0.zip"
   }
 }
