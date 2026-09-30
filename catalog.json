@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-09-26T22:07:25Z",
+  "generated": "2026-09-30T06:27:57Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -97,43 +97,71 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "ai.undercurrent.breachradar",
-      "updated": "2026-09-23T19:11:22Z",
+      "updated": "2026-09-30T06:27:51Z",
       "platforms": {
         "macos": {
           "manifest": "breach_radar/appcast.json",
           "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/breach_radar/appcast.json",
-          "version": "0.2.1",
-          "published": "2026-09-23T19:11:22Z",
-          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.2.1",
+          "version": "0.3.0",
+          "published": "2026-09-30T06:27:51Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.3.0",
           "channel": "stable",
           "assets": [
             {
               "role": "zip",
-              "name": "BreachRadar-0.2.1.zip",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.zip",
-              "sha256": "3f06b9d079c96fda8cede851ce6dba16640cf72b815f7352303fed054dc70ad5",
-              "size": 486646
+              "name": "BreachRadar-0.3.0.zip",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.zip",
+              "sha256": "5093482cf3ed9e3231a44270883df5398093462e622adf20177544ff4091df03",
+              "size": 616645
             },
             {
               "role": "dmg",
-              "name": "BreachRadar-0.2.1.dmg",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+              "name": "BreachRadar-0.3.0.dmg",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.dmg",
               "sha256": null,
               "size": null
             }
           ],
           "primary": {
             "role": "dmg",
-            "name": "BreachRadar-0.2.1.dmg",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
+            "name": "BreachRadar-0.3.0.dmg",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.dmg",
             "sha256": null,
             "size": null
           },
           "signed": true,
-          "notes": "The first release built to be handed to other people rather than run only on the\nmachine it was written on.\n\n**Installing**\n- Compressed `.dmg` (~690 KB) with an Applications drop target, a `READ ME\n  FIRST` covering the first-launch Gatekeeper prompt, and a `First Run.command`\n  that clears the quarantine flag for you.\n\n**Updating**\n- Settings \u2192 General \u2192 **Check now**, or \u2318-menu \u2192 *Check for Updates\u2026*, plus a\n  quiet once-a-day check on launch that says nothing unless there is news.\n- An update is downloaded from this repository's releases and is **refused\n  unless it carries a valid Ed25519 signature** from the release key. The signed\n  message includes the version, so an old signature cannot be replayed to force\n  a downgrade. The swap is atomic \u2014 a crash mid-update cannot leave an app that\n  will not start.\n- Your board, notes and settings live in `~/.undercurrent/breachradar/` and are\n  untouched by an update.\n\n**Privacy**\n- The SEC contact address is a preference now instead of a value baked into the\n  binary. Set yours in Settings \u2192 General; Settings also shows exactly what the\n  app sends. Nothing else about you leaves the machine \u2014 there is no server and\n  no telemetry.\n- Paths that assumed a `~/NEXUS` tree fall back to the app's own store, so a\n  fresh install creates nothing in a stranger's home directory.\n- The build refuses to finish if any machine-identifying string is found inside\n  the bundle.\n\n**Fixed**\n- Update checks bypass the URL cache. Without this the appcast and the zip could\n  both be answered from cache, which looks like a working updater right up until\n  a release goes out and nobody is offered it.",
+          "notes": "# Breach Radar 0.3.0\n\nThe release where the board stops being a list of companies you cannot do\nanything about.\n\n## Send outreach\n\nA bright button in the top bar carrying the number of targets that are writable\n**today** \u2014 inside the day 45\u2013120 window with no first touch sent. The same\nbutton appears again in the article, where you have just finished reading and\ndeciding. Both open a compose sheet:\n\n- **Four editable touches.** The clock, the artefact, the workspace, the\n  forward. The fourth asks for a name rather than a meeting, because a forward\n  to the person who owns the first hour of an incident beats a call with the\n  wrong one.\n- **Recipients ranked**, best first, by whether they have an address at all and\n  how close their title is to CISO / Deputy CISO / Head of IR \u2014 with Head of\n  Platform as the second door.\n- **Four ways to send.** The default opens a Gmail compose window in your\n  browser, signed in as you. The send then comes from a real mailbox on your\n  own domain, carries its SPF, DKIM and DMARC, lands in Sent where replies\n  thread, and cannot turn into a blast by accident. There is also a `mailto:`\n  route for Mail and Outlook, a copy-for-LinkedIn route, and an automated\n  route that is deliberately not armed.\n\n### Two gates, and they both run twice\n\n**Eligibility** is the day 45\u2013120 window. That is not inbox etiquette \u2014 during\nnotification and investigation the people worth reaching are under instruction\nnot to characterise the incident to outsiders. They cannot have the\nconversation, however good the email is.\n\n**Content** reads the rendered message and refuses:\n\n- a first touch that names the incident, or reuses the language of their own\n  headline \u2014 every competitor opens with \"I saw the news\", and that line is why\n  this category converts at about one percent;\n- a message carrying a claim code without the experimental-use and\n  satisfy-your-own-standards blocks;\n- credential-harvester phrasing (\"click here\", \"log in here\") anywhere near a\n  code.\n\nBoth gates run again on exactly the bytes about to leave, because the draft is\neditable after it was rendered. The override is there, and it is logged\ntogether with the refusal it ignored \u2014 a rule that cannot be broken gets worked\naround invisibly instead.\n\n## Rogue agents\n\nA third incident tier, beside \"somebody got in\" and \"the lights went off\": an\nautonomous system did something nobody authorised. It has its own pane, its own\nfilter, three agent-era feeds, and a watch list of standing searches for the\ncases the security wires miss because they file them under AI news.\n\nThe watch list **opens searches; it does not assert incidents**. The app will\nnot tell you a named company's agent did a named thing it cannot cite.\n\nExisting cards are promoted into the category one way only \u2014 never out of a\nkind you set by hand.\n\n## Undercurrent workspaces and claim codes\n\nReserve `<theirorg>.undercurrent.ai` for a target and carry the claim code in\nthe third message. Off behind two independent switches: one here, one on the\nserver.\n\nThe code is **not a credential**. Redeeming it requires signing in normally\nfirst, at a domain you typed. It attaches an empty workspace to an account that\nalready exists; it never creates one and never logs anybody in.\n\n## The store is SQLite now\n\n`state.json` was the only copy of which targets had been contacted, rewritten\nwhole on every keystroke, and one bad field could make the entire board\nundecodable. It is not the source of truth any more.\n\n- Every value is its own column, so a bad one is a default on one row instead\n  of an empty board.\n- A save is one transaction. A crash rolls back to the last commit rather than\n  to a half-written file.\n- `PRAGMA integrity_check` runs on open, and a failure restores the newest\n  snapshot instead of quietly starting over.\n- Snapshots are taken with `VACUUM INTO` while the app is live.\n\nYour existing `state.json` is imported once, never written to again, and never\ndeleted. A portable JSON copy is still written to `export/state.json` \u2014 as a\nmirror, not as the record.\n\n## Your theme survives quitting\n\nTwo separate bugs were throwing it away. WKWebView does not persist\nlocalStorage for a `file://` page, so every theme, scheme and accent choice\nwent into a store that emptied on quit; and the restore path clicked the\naccent Reset on every launch, discarding a custom accent even when it had\nsurvived. Both fixed.\n\n## A top bar you can read\n\nThree bands of chrome saying overlapping things became one row: three tabs, the\nsend button, a **Filters** button that stays shut until asked for, and a status\nline set at a size meant for reading rather than for captions. Type, fit,\ngrouping and sort moved behind Advanced filters. Theme and scheme moved out of\nthe native toolbar into Settings.\n\n## Kanban\n\nCards in a column had no flex basis, so once a column overflowed every card was\ncompressed below its own content and clipped \u2014 which is why the board looked\nlike overlapping half-rows of text. Fixed, and the column scrolls.\n\n## The rail\n\nThirteen rows became eight, in two tiers. Drag them into the order you actually\nwork in. The kanban, the agent pane and the data sources moved into the second,\ndemoted tier. Click counts are kept locally so **Sort by use** can answer a\nquestion that cannot be answered after the fact.\n\n---\n\nUpgrading is safe from 0.2.x: the first launch migrates your board and leaves\nthe old file alone.",
           "minSystem": "11.0",
-          "channelSignature": "iKqTMEV5GcFNxYHApgMQnw5jmyZce3t1oId6AscMEuRSDe9/iqcIkY1pft+z7azHuRohgPZyAD6Y+7eom8gbCw==",
+          "channelSignature": "OMXnNMZyJbPV9i1oU5TAeOYWIeXaH8JezVz1LjlBhTp2vqFBMg21vQR4ioi2yzNA+SZaGC8Z4XRgikNtTNsLAA==",
           "versions": [
+            {
+              "version": "0.3.0",
+              "published": "2026-09-30T06:27:51Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-v0.3.0",
+              "assets": [
+                {
+                  "role": "zip",
+                  "name": "BreachRadar-0.3.0.zip",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.zip",
+                  "sha256": "5093482cf3ed9e3231a44270883df5398093462e622adf20177544ff4091df03",
+                  "size": 616645
+                },
+                {
+                  "role": "dmg",
+                  "name": "BreachRadar-0.3.0.dmg",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.dmg",
+                  "sha256": null,
+                  "size": null
+                }
+              ],
+              "primary": {
+                "role": "dmg",
+                "name": "BreachRadar-0.3.0.dmg",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.3.0/BreachRadar-0.3.0.dmg",
+                "sha256": null,
+                "size": null
+              }
+            },
             {
               "version": "0.2.1",
               "published": "2026-09-23T19:11:22Z",
