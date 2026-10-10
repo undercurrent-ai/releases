@@ -1,0 +1,31 @@
+{
+  "app": "Lair",
+  "platform": "android",
+  "channel": "stable",
+  "latest": {
+    "version": "2.1.2",
+    "versionName": "2.1.2",
+    "versionCode": 20102,
+    "package": "ai.undercurrent.lair.debug",
+    "published": "2026-10-10T16:17:01Z",
+    "minSdk": 26,
+    "targetSdk": 35,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+    "notes": "# Lair 2.1.2\n\nLair now keeps a shared project intact when it downloads to a device for the first time.\n\n- A shared project can no longer be taken over by a stray duplicate when it first downloads to a device.\n- Lair now shows only its own projects when your team also uses another app.\n- Lair on Android gives you your board, issues, issue details and comments.\n- The phone has the same Team screen as the Mac, and the two stay in step.\n- Share a project with other people and choose whether each one can view or edit.\n- Shared projects are end-to-end encrypted, and projects you have not shared are never uploaded.\n",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/lair-android-v2.1.2",
+    "apk": {
+      "name": "Lair-2.1.2-android.apk",
+      "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-android-v2.1.2/Lair-2.1.2-android.apk",
+      "sha256": "942e7db5df2651f7eaa31545707ef81136ddf62cc0f6520fd92b9f6dde4e5798",
+      "size": 18255316
+    },
+    "channelSignature": "z3qOvExJC9Bt9Ngn1Wm/3syFyFhVA9akE9MJzhMpd4bt6+mbz/wVpzpBjqCBvlz0Emuhji2pBzXzYOtDRUIeAw==",
+    "channelSignedAsset": "Lair-2.1.2-android.apk"
+  }
+}

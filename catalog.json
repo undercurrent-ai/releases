@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-10T16:16:47Z",
+  "generated": "2026-10-10T16:17:02Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -11,7 +11,7 @@
     "products": 13,
     "platforms": {
       "macos": 13,
-      "android": 2,
+      "android": 3,
       "linux": 0,
       "windows": 0,
       "server": 0
@@ -652,7 +652,7 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "ai.undercurrent.lair",
-      "updated": "2026-09-26T21:34:45Z",
+      "updated": "2026-10-10T16:17:01Z",
       "platforms": {
         "macos": {
           "manifest": "lair/appcast.json",
@@ -701,6 +701,67 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-v2.0.1/Lair-2.0.1.zip",
                 "sha256": "573f2712f02843feb426fdb67cbfcdfdb5c321f89b3c18c3ada9fdb2057fc65f",
                 "size": 117858548
+              }
+            }
+          ]
+        },
+        "android": {
+          "manifest": "lair/android.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/lair/android.json",
+          "version": "2.1.2",
+          "published": "2026-10-10T16:17:01Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/lair-android-v2.1.2",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "apk",
+              "name": "Lair-2.1.2-android.apk",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-android-v2.1.2/Lair-2.1.2-android.apk",
+              "sha256": "942e7db5df2651f7eaa31545707ef81136ddf62cc0f6520fd92b9f6dde4e5798",
+              "size": 18255316
+            }
+          ],
+          "primary": {
+            "role": "apk",
+            "name": "Lair-2.1.2-android.apk",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-android-v2.1.2/Lair-2.1.2-android.apk",
+            "sha256": "942e7db5df2651f7eaa31545707ef81136ddf62cc0f6520fd92b9f6dde4e5798",
+            "size": 18255316
+          },
+          "signed": false,
+          "notes": "# Lair 2.1.2\n\nLair now keeps a shared project intact when it downloads to a device for the first time.\n\n- A shared project can no longer be taken over by a stray duplicate when it first downloads to a device.\n- Lair now shows only its own projects when your team also uses another app.\n- Lair on Android gives you your board, issues, issue details and comments.\n- The phone has the same Team screen as the Mac, and the two stay in step.\n- Share a project with other people and choose whether each one can view or edit.\n- Shared projects are end-to-end encrypted, and projects you have not shared are never uploaded.\n",
+          "minSdk": 26,
+          "targetSdk": 35,
+          "versionCode": 20102,
+          "package": "ai.undercurrent.lair.debug",
+          "abis": [
+            "arm64-v8a",
+            "armeabi-v7a",
+            "x86",
+            "x86_64"
+          ],
+          "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+          "channelSignature": "z3qOvExJC9Bt9Ngn1Wm/3syFyFhVA9akE9MJzhMpd4bt6+mbz/wVpzpBjqCBvlz0Emuhji2pBzXzYOtDRUIeAw==",
+          "versions": [
+            {
+              "version": "2.1.2",
+              "published": "2026-10-10T16:17:01Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/lair-android-v2.1.2",
+              "assets": [
+                {
+                  "role": "apk",
+                  "name": "Lair-2.1.2-android.apk",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-android-v2.1.2/Lair-2.1.2-android.apk",
+                  "sha256": "942e7db5df2651f7eaa31545707ef81136ddf62cc0f6520fd92b9f6dde4e5798",
+                  "size": 18255316
+                }
+              ],
+              "primary": {
+                "role": "apk",
+                "name": "Lair-2.1.2-android.apk",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/lair-android-v2.1.2/Lair-2.1.2-android.apk",
+                "sha256": "942e7db5df2651f7eaa31545707ef81136ddf62cc0f6520fd92b9f6dde4e5798",
+                "size": 18255316
               }
             }
           ]
