@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-10T16:15:26Z",
+  "generated": "2026-10-10T16:16:47Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -11,7 +11,7 @@
     "products": 13,
     "platforms": {
       "macos": 13,
-      "android": 1,
+      "android": 2,
       "linux": 0,
       "windows": 0,
       "server": 0
@@ -97,7 +97,7 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "ai.undercurrent.breachradar",
-      "updated": "2026-09-30T14:51:22Z",
+      "updated": "2026-10-10T16:16:46Z",
       "platforms": {
         "macos": {
           "manifest": "breach_radar/appcast.json",
@@ -244,6 +244,67 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-v0.2.1/BreachRadar-0.2.1.dmg",
                 "sha256": null,
                 "size": null
+              }
+            }
+          ]
+        },
+        "android": {
+          "manifest": "breach_radar/android.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/breach_radar/android.json",
+          "version": "0.4.0",
+          "published": "2026-10-10T16:16:46Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-android-v0.4.0",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "apk",
+              "name": "BreachRadar-android-0.4.0-debug.apk",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-android-v0.4.0/BreachRadar-android-0.4.0-debug.apk",
+              "sha256": "d13ee39971115df7bd1ed74ab29a8b25ff23271c0482751fdb47c48801b5f43a",
+              "size": 13839036
+            }
+          ],
+          "primary": {
+            "role": "apk",
+            "name": "BreachRadar-android-0.4.0-debug.apk",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-android-v0.4.0/BreachRadar-android-0.4.0-debug.apk",
+            "sha256": "d13ee39971115df7bd1ed74ab29a8b25ff23271c0482751fdb47c48801b5f43a",
+            "size": 13839036
+          },
+          "signed": false,
+          "notes": "# Breach Radar 0.4.0\n\nThe phone now reads the incident feed itself, so new incidents arrive without the Mac.\n\n- **The incident feed.** Breach Radar reads the public feed at radar.undercurrent.ai. Nothing about your phone or your board travels with the request. If the feed cannot be reached it says so in one quiet line and shows what the phone already holds.\n- **Three categories.** Every incident is a Data Breach, a System Outage or an Agentic Overreach, and each list can be read by category.\n- **A Fact Sheet opens every article.** Who, what, when and the figures that were reported, before the story.\n- **Dates as dates.** Both dates are written out with one plain state, for example \"Open until 5 Dec 2026 (57 days left)\".\n- **Kept on the phone.** Articles are stored sealed on the device for 30 days, longer for anything you saved or acted on, and can be read offline.\n- **In the background.** The app checks the feed while closed and tells you about new incidents in one notification channel.\n\n## Unchanged\n\n- Your board, your pairing and your shelves are as they were.\n",
+          "minSdk": 26,
+          "targetSdk": 35,
+          "versionCode": 400,
+          "package": "ai.undercurrent.breachradar",
+          "abis": [
+            "arm64-v8a",
+            "armeabi-v7a",
+            "x86",
+            "x86_64"
+          ],
+          "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+          "channelSignature": "ZSmkLNPCYiTH/FkTlmzSSKyt7nCOpjvVEBLPLCcB+jNRDtYKrkUewvdbwzq7+C0swC+8NE5cIP3CUbJeR3isCQ==",
+          "versions": [
+            {
+              "version": "0.4.0",
+              "published": "2026-10-10T16:16:46Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/breach_radar-android-v0.4.0",
+              "assets": [
+                {
+                  "role": "apk",
+                  "name": "BreachRadar-android-0.4.0-debug.apk",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-android-v0.4.0/BreachRadar-android-0.4.0-debug.apk",
+                  "sha256": "d13ee39971115df7bd1ed74ab29a8b25ff23271c0482751fdb47c48801b5f43a",
+                  "size": 13839036
+                }
+              ],
+              "primary": {
+                "role": "apk",
+                "name": "BreachRadar-android-0.4.0-debug.apk",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/breach_radar-android-v0.4.0/BreachRadar-android-0.4.0-debug.apk",
+                "sha256": "d13ee39971115df7bd1ed74ab29a8b25ff23271c0482751fdb47c48801b5f43a",
+                "size": 13839036
               }
             }
           ]
