@@ -1,0 +1,31 @@
+{
+  "app": "Johnny",
+  "platform": "android",
+  "channel": "stable",
+  "latest": {
+    "version": "0.4.1",
+    "versionName": "0.4.1",
+    "versionCode": 6,
+    "package": "ai.undercurrent.depot.debug",
+    "published": "2026-10-10T16:15:25Z",
+    "minSdk": 26,
+    "targetSdk": 35,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+    "notes": "## What changed\n\n- Fixed: 0.4.0 could close on Android 8 to 13 when it showed where the list came from. The line that says when the list was written used something only Android 14 and later have. It now works on every Android that Blastpad runs on, from 8 up.\n- Added: Blastpad tells Undercurrent which version is installed \u2014 once a day, and after an update: the version, the device type and model, the Android version and a random install id. No account, no location. The switch is the last row of the list, and it starts on.\n\n## Good to know\n\n- On Android 8 to 13, 0.4.0 may close before it can update itself. Install this version over it by hand once; nothing on the phone is lost, and later updates go through Blastpad as usual.\n\n## Unchanged\n\n- What changed in each release is still shown before anything installs, and every download is still checked against its SHA-256 and the channel signature first.\n",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/depot-android-v0.4.1",
+    "apk": {
+      "name": "Blastpad-0.4.1-android-debug.apk",
+      "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.1/Blastpad-0.4.1-android-debug.apk",
+      "sha256": "f2392bbdcf89b2d1a0ec1efe630f31eea208190f8df7a6415d0fe448280205c5",
+      "size": 10211312
+    },
+    "channelSignature": "Jb2jOYKkOkwdGIMF0kksJk0Cm2xeUNCAClKKxpvATk2z+Cfrfb8lYvhhHDyRcTBlq61F7KhG9tlpylPVTRr+Dw==",
+    "channelSignedAsset": "Blastpad-0.4.1-android-debug.apk"
+  }
+}
