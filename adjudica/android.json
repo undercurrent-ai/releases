@@ -1,0 +1,31 @@
+{
+  "app": "Adjudica",
+  "platform": "android",
+  "channel": "stable",
+  "latest": {
+    "version": "1.8.1",
+    "versionName": "1.8.1",
+    "versionCode": 10,
+    "package": "com.factory.ranker",
+    "published": "2026-10-10T16:23:21Z",
+    "minSdk": 24,
+    "targetSdk": 35,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+    "notes": "# Adjudica 1.8.1\n\nAdjudica has a new icon: two halves facing off, in the magenta-to-cyan look that led your own ranking for it.\n\n- **New icon.** The versus mark drawn as a line, magenta running to cyan, on black.\n- **Themed icons work.** With themed icons switched on, Android draws the same mark in your wallpaper's colours.\n- **Back no longer leaves the app.** At the first screen the back button and gesture do nothing.\n- Your lists, items and comparisons are untouched.\n",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-android-v1.8.1",
+    "apk": {
+      "name": "Adjudica-1.8.1-android-debug.apk",
+      "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-android-v1.8.1/Adjudica-1.8.1-android-debug.apk",
+      "sha256": "930a657f7c897e7bfb9131a6f90031f4994e5e375d55a53643a619f2fb90fa58",
+      "size": 19812971
+    },
+    "channelSignature": "UIua9neC1Oe8/5xE1siYVcK4s4OYw8nUU7ELJYV6nAEwHHZRJVpKxLqA2kQj+gag9dAB7lAAy3rV9etWpiRvCA==",
+    "channelSignedAsset": "Adjudica-1.8.1-android-debug.apk"
+  }
+}

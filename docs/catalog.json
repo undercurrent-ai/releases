@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-10T16:17:02Z",
+  "generated": "2026-10-10T16:23:22Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -11,7 +11,7 @@
     "products": 13,
     "platforms": {
       "macos": 13,
-      "android": 3,
+      "android": 4,
       "linux": 0,
       "windows": 0,
       "server": 0
@@ -30,7 +30,7 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "com.factory.adjudica",
-      "updated": "2026-09-26T22:06:37Z",
+      "updated": "2026-10-10T16:23:21Z",
       "platforms": {
         "macos": {
           "manifest": "adjudica/appcast.json",
@@ -79,6 +79,67 @@
                 "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-v1.8.0/Adjudica-1.8.0.zip",
                 "sha256": "1c8fac8050beefe2ed0d9e371922d7204dc559c1e19981aad78c8cbcb989d1cd",
                 "size": 120560922
+              }
+            }
+          ]
+        },
+        "android": {
+          "manifest": "adjudica/android.json",
+          "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/adjudica/android.json",
+          "version": "1.8.1",
+          "published": "2026-10-10T16:23:21Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-android-v1.8.1",
+          "channel": "stable",
+          "assets": [
+            {
+              "role": "apk",
+              "name": "Adjudica-1.8.1-android-debug.apk",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-android-v1.8.1/Adjudica-1.8.1-android-debug.apk",
+              "sha256": "930a657f7c897e7bfb9131a6f90031f4994e5e375d55a53643a619f2fb90fa58",
+              "size": 19812971
+            }
+          ],
+          "primary": {
+            "role": "apk",
+            "name": "Adjudica-1.8.1-android-debug.apk",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-android-v1.8.1/Adjudica-1.8.1-android-debug.apk",
+            "sha256": "930a657f7c897e7bfb9131a6f90031f4994e5e375d55a53643a619f2fb90fa58",
+            "size": 19812971
+          },
+          "signed": false,
+          "notes": "# Adjudica 1.8.1\n\nAdjudica has a new icon: two halves facing off, in the magenta-to-cyan look that led your own ranking for it.\n\n- **New icon.** The versus mark drawn as a line, magenta running to cyan, on black.\n- **Themed icons work.** With themed icons switched on, Android draws the same mark in your wallpaper's colours.\n- **Back no longer leaves the app.** At the first screen the back button and gesture do nothing.\n- Your lists, items and comparisons are untouched.\n",
+          "minSdk": 24,
+          "targetSdk": 35,
+          "versionCode": 10,
+          "package": "com.factory.ranker",
+          "abis": [
+            "arm64-v8a",
+            "armeabi-v7a",
+            "x86",
+            "x86_64"
+          ],
+          "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+          "channelSignature": "UIua9neC1Oe8/5xE1siYVcK4s4OYw8nUU7ELJYV6nAEwHHZRJVpKxLqA2kQj+gag9dAB7lAAy3rV9etWpiRvCA==",
+          "versions": [
+            {
+              "version": "1.8.1",
+              "published": "2026-10-10T16:23:21Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/adjudica-android-v1.8.1",
+              "assets": [
+                {
+                  "role": "apk",
+                  "name": "Adjudica-1.8.1-android-debug.apk",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-android-v1.8.1/Adjudica-1.8.1-android-debug.apk",
+                  "sha256": "930a657f7c897e7bfb9131a6f90031f4994e5e375d55a53643a619f2fb90fa58",
+                  "size": 19812971
+                }
+              ],
+              "primary": {
+                "role": "apk",
+                "name": "Adjudica-1.8.1-android-debug.apk",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/adjudica-android-v1.8.1/Adjudica-1.8.1-android-debug.apk",
+                "sha256": "930a657f7c897e7bfb9131a6f90031f4994e5e375d55a53643a619f2fb90fa58",
+                "size": 19812971
               }
             }
           ]
