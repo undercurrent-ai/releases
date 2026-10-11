@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VillageGreen — Undercurrent Depot</title>
+<meta name="description" content="A reading app for your reports, already on your phone">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../depot.css">
+<script>
+  // Applied before first paint so a dark-mode visitor never sees a light flash.
+  // Wrapped because localStorage throws outright in some privacy modes.
+  try { var t = localStorage.getItem('depot-theme');
+        if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="mark"></span>Undercurrent
+    <span class="sub">Depot</span></a>
+  <nav>
+    <a href="../mac/index.html">macOS</a>
+    <a href="../android/index.html">Android</a>
+    <a href="https://github.com/undercurrent-ai/releases">Channel</a>
+    <button class="theme" id="tt" type="button" aria-label="Toggle dark mode">Dark</button>
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <section class="phero">
+    <div class="icon">VI</div>
+    <div style="min-width:0">
+      <h1>VillageGreen</h1>
+      <p class="tagline">A reading app for your reports, already on your phone</p>
+    </div>
+  </section>
+  <div class='prose'><p>VillageGreen is a reading app for your own reports. Each one opens as the report itself: the real page, moving and interactive, with charts you can tap, diagrams that draw themselves, and links that take you from one report to the next. The same article is one press away as clean text, in your own font, size and theme.</p><p>Star an article, highlight a sentence, tag it, keep reading lists, search the library and leave comments. Your stars, progress and highlights travel between your own devices and reach nobody else.</p><p>The library is synced end-to-end encrypted, so the server that carries it cannot read a title, a word of text, a highlight or a comment. You can give another person a shelf to read, or to read and comment on.</p></div>
+  <h2 class='section'>Android</h2><div class="dl">
+  <div class="what">
+    <div class="name">Android · VillageGreen-0.7.0-android.apk</div>
+    <div class="facts">0.7.0 · 19 MB · 2026-10-11 · Android 8.0+</div>
+  </div>
+  <a class="btn" href="https://github.com/undercurrent-ai/releases/releases/download/villagegreen-android-v0.7.0/VillageGreen-0.7.0-android.apk">Download</a>
+  
+</div><div class='prose'><p>VillageGreen 0.7.0 (2026-10-11 01:30)</p><ul><li>An article now opens as the report itself: the real page, moving and interactive, instead of its text re-set. Sections arrive as you scroll, numbers count up, bars grow, diagrams draw themselves. Layout on the bar says LIVE; Mobile and Clean are still one press away there.</li><li>Tables sort when you tap a column, and a table of numbers has a Table / Chart switch. Tap a picture or a wide diagram to see it whole.</li><li>Reports link to each other. A link to another report is a coloured chip: tap it for a preview, tap Open to go there, Back to return. Every article ends with Connected, a map of what it links to, what links to it and the rest of its project, and a Read next row, unread first.</li><li>New reports can carry a chooser (pick between options, with a ranking), a step-by-step explainer that reads itself aloud, charts, timelines and before / after views.</li><li>A sidebar: the menu button at the top left, or a finger drawn in from the left edge. Inbox, Briefings, Starred, History, Archive and All, then your categories and the types of article, each with a count.</li><li>A star on every article in a list and on the bar of the article you are reading, and a star on the library&#x27;s bar to show only what is starred. Favorites are now called Starred; nothing you had marked is lost.</li><li>Day and night on the bar change the live page too. Settings has &quot;Movement in a live page&quot;: Full, Calm or Still.</li><li>A live page runs with the network blocked. A report that pulls a chart library or a font from the web shows without it.</li><li>The pages arrive with the next sync after the library is published again from the Mac; until an article&#x27;s page is here it opens as Mobile, with a line saying so.</li><li>Not in the live layout yet: highlights and holding a sentence. They are in Mobile and Clean as before.</li><li>Send moved from the bar into the More menu.</li><li>It installs over 0.6.x and keeps the library. Checked on an emulator, not yet on a real phone.</li></ul></div><div class="note"><strong>Two ways to install.</strong>
+  <a href="../android/index.html">Depot for Android</a> keeps this app updated for
+  you. Installing the APK by hand works too, but nothing will tell you when a new
+  version lands.</div><h3 style='font-size:14px;margin:26px 0 10px'>Integrity</h3><table><tr><td style='white-space:nowrap;color:var(--text-muted)'>SHA-256</td><td class='h'>29146bdff3eefacba6e1c4c15313be4c52e1a1889001ba2728a2106dda767d38</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>APK signing certificate</td><td class='h'>43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Signed manifest</td><td class='h'>checksum only</td></tr><tr><td style='white-space:nowrap;color:var(--text-muted)'>Manifest</td><td class='h'>https://raw.githubusercontent.com/undercurrent-ai/releases/master/villagegreen/android.json</td></tr></table><pre>shasum -a 256 VillageGreen-0.7.0-android.apk
+# 29146bdff3eefacba6e1c4c15313be4c52e1a1889001ba2728a2106dda767d38</pre><h3 style='font-size:14px;margin:26px 0 10px'>Every Android version</h3>
+<p style="font-size:13px;color:var(--text-muted);margin:0 0 10px">
+  Published versions are immutable — a tag is never rebuilt, so a checksum here
+  is good forever. Older builds stay downloadable.</p>
+<table><thead><tr><th>Version</th><th>Published</th><th>Files</th><th>SHA-256</th></tr></thead>
+<tbody><tr><td class='v'>0.7.0 <span class='pill'>current</span></td><td style='white-space:nowrap;color:var(--text-muted)'>2026-10-11</td><td style='white-space:nowrap'><a href='https://github.com/undercurrent-ai/releases/releases/download/villagegreen-android-v0.7.0/VillageGreen-0.7.0-android.apk'>APK</a></td><td class='h'>29146bdff3eefacba6e1c4c15313be4c</td></tr></tbody></table>
+</div>
+<footer class="site"><div class="wrap">
+  <span>Undercurrent · release channel</span>
+  <span>Every artefact is checksummed; app updates are Ed25519-signed.</span>
+  <a href="../catalog.json">catalog.json</a>
+  <a href="https://github.com/undercurrent-ai/releases">source of record</a>
+</div></footer>
+<script>
+  (function () {
+    var b = document.getElementById('tt');
+    function cur() {
+      return document.documentElement.dataset.theme ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function paint() { b.textContent = cur() === 'dark' ? 'Light' : 'Dark'; }
+    b.addEventListener('click', function () {
+      var next = cur() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('depot-theme', next); } catch (e) {}
+      paint();
+    });
+    paint();
+  })();
+</script>
+</body>
+</html>

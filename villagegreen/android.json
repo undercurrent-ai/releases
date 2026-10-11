@@ -1,0 +1,31 @@
+{
+  "app": "VillageGreen",
+  "platform": "android",
+  "channel": "stable",
+  "latest": {
+    "version": "0.7.0",
+    "versionName": "0.7.0",
+    "versionCode": 700,
+    "package": "ai.undercurrent.villagegreen.debug",
+    "published": "2026-10-11T09:03:42Z",
+    "minSdk": 26,
+    "targetSdk": 35,
+    "abis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
+    "notes": "VillageGreen 0.7.0 (2026-10-11 01:30)\n\n- An article now opens as the report itself: the real page, moving and interactive, instead of its text re-set. Sections arrive as you scroll, numbers count up, bars grow, diagrams draw themselves. Layout on the bar says LIVE; Mobile and Clean are still one press away there.\n- Tables sort when you tap a column, and a table of numbers has a Table / Chart switch. Tap a picture or a wide diagram to see it whole.\n- Reports link to each other. A link to another report is a coloured chip: tap it for a preview, tap Open to go there, Back to return. Every article ends with Connected, a map of what it links to, what links to it and the rest of its project, and a Read next row, unread first.\n- New reports can carry a chooser (pick between options, with a ranking), a step-by-step explainer that reads itself aloud, charts, timelines and before / after views.\n- A sidebar: the menu button at the top left, or a finger drawn in from the left edge. Inbox, Briefings, Starred, History, Archive and All, then your categories and the types of article, each with a count.\n- A star on every article in a list and on the bar of the article you are reading, and a star on the library's bar to show only what is starred. Favorites are now called Starred; nothing you had marked is lost.\n- Day and night on the bar change the live page too. Settings has \"Movement in a live page\": Full, Calm or Still.\n- A live page runs with the network blocked. A report that pulls a chart library or a font from the web shows without it.\n- The pages arrive with the next sync after the library is published again from the Mac; until an article's page is here it opens as Mobile, with a line saying so.\n- Not in the live layout yet: highlights and holding a sentence. They are in Mobile and Clean as before.\n- Send moved from the bar into the More menu.\n- It installs over 0.6.x and keeps the library. Checked on an emulator, not yet on a real phone.\n",
+    "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/villagegreen-android-v0.7.0",
+    "apk": {
+      "name": "VillageGreen-0.7.0-android.apk",
+      "url": "https://github.com/undercurrent-ai/releases/releases/download/villagegreen-android-v0.7.0/VillageGreen-0.7.0-android.apk",
+      "sha256": "29146bdff3eefacba6e1c4c15313be4c52e1a1889001ba2728a2106dda767d38",
+      "size": 20276062
+    },
+    "channelSignature": "ZUM2Yjdyp5BaG6CMhKzvQPzxMayzn5gWfJPKXt2SZFNzIXiqs4EhomLRcWOoAvmOOcSAWbx0d3RjqEUlYuhYCw==",
+    "channelSignedAsset": "VillageGreen-0.7.0-android.apk"
+  }
+}

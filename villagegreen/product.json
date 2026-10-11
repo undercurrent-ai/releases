@@ -1,0 +1,10 @@
+{
+  "slug": "villagegreen",
+  "name": "VillageGreen",
+  "tagline": "A reading app for your reports, already on your phone",
+  "category": "Reading",
+  "publisher": "Undercurrent",
+  "kind": "app",
+  "description": "VillageGreen is a reading app for your own reports. Each one opens as the report itself: the real page, moving and interactive, with charts you can tap, diagrams that draw themselves, and links that take you from one report to the next. The same article is one press away as clean text, in your own font, size and theme.\n\nStar an article, highlight a sentence, tag it, keep reading lists, search the library and leave comments. Your stars, progress and highlights travel between your own devices and reach nobody else.\n\nThe library is synced end-to-end encrypted, so the server that carries it cannot read a title, a word of text, a highlight or a comment. You can give another person a shelf to read, or to read and comment on.",
+  "homepage": "https://undercurrent.ai"
+}
