@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-11T09:03:44Z",
+  "generated": "2026-10-11T17:36:24Z",
   "channel": {
     "name": "Undercurrent",
     "repo": "undercurrent-ai/releases",
@@ -384,7 +384,7 @@
       "screenshots": [],
       "kind": "app",
       "bundleId": "ai.undercurrent.depot",
-      "updated": "2026-10-10T16:15:25Z",
+      "updated": "2026-10-11T17:36:22Z",
       "platforms": {
         "macos": {
           "manifest": "depot/appcast.json",
@@ -440,31 +440,31 @@
         "android": {
           "manifest": "depot/android.json",
           "manifestUrl": "https://raw.githubusercontent.com/undercurrent-ai/releases/master/depot/android.json",
-          "version": "0.4.1",
-          "published": "2026-10-10T16:15:25Z",
-          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/depot-android-v0.4.1",
+          "version": "0.4.2",
+          "published": "2026-10-11T17:36:22Z",
+          "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/depot-android-v0.4.2",
           "channel": "stable",
           "assets": [
             {
               "role": "apk",
-              "name": "Blastpad-0.4.1-android-debug.apk",
-              "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.1/Blastpad-0.4.1-android-debug.apk",
-              "sha256": "f2392bbdcf89b2d1a0ec1efe630f31eea208190f8df7a6415d0fe448280205c5",
-              "size": 10211312
+              "name": "Blastpad-0.4.2-android-debug.apk",
+              "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.2/Blastpad-0.4.2-android-debug.apk",
+              "sha256": "f2314167f64f3ecae87e647cea68c706011e4f86b22f2362e536f493d2996e1c",
+              "size": 10244080
             }
           ],
           "primary": {
             "role": "apk",
-            "name": "Blastpad-0.4.1-android-debug.apk",
-            "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.1/Blastpad-0.4.1-android-debug.apk",
-            "sha256": "f2392bbdcf89b2d1a0ec1efe630f31eea208190f8df7a6415d0fe448280205c5",
-            "size": 10211312
+            "name": "Blastpad-0.4.2-android-debug.apk",
+            "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.2/Blastpad-0.4.2-android-debug.apk",
+            "sha256": "f2314167f64f3ecae87e647cea68c706011e4f86b22f2362e536f493d2996e1c",
+            "size": 10244080
           },
           "signed": false,
-          "notes": "## What changed\n\n- Fixed: 0.4.0 could close on Android 8 to 13 when it showed where the list came from. The line that says when the list was written used something only Android 14 and later have. It now works on every Android that Blastpad runs on, from 8 up.\n- Added: Blastpad tells Undercurrent which version is installed \u2014 once a day, and after an update: the version, the device type and model, the Android version and a random install id. No account, no location. The switch is the last row of the list, and it starts on.\n\n## Good to know\n\n- On Android 8 to 13, 0.4.0 may close before it can update itself. Install this version over it by hand once; nothing on the phone is lost, and later updates go through Blastpad as usual.\n\n## Unchanged\n\n- What changed in each release is still shown before anything installs, and every download is still checked against its SHA-256 and the channel signature first.\n",
+          "notes": "## What changed\n\n- Blastpad now checks for updates every 15 minutes instead of every 12 hours, so a new release is announced within minutes of being published and not up to half a day later.\n- Every app says when it was last updated, as a date and as time elapsed: \"Updated 2026-10-11 02:03 \u00b7 14 min ago\". An installed app also says what is on this phone and since when: \"On this phone: 0.4.1 since 2026-10-10 09:03 \u00b7 17 h ago\". With an update waiting, the newer date is the one in bold. Each app's page carries the same two lines.\n- The top of the list says when Blastpad last checked and about when it will again: \"Checked 02:21 \u00b7 3 min ago \u00b7 next check about 02:36\". Opening Blastpad always checks at once, and so does pulling the list down.\n- New at the bottom of the list, \"Check for updates\": every 15 minutes, 1 hour, 6 hours or 12 hours, or only when opened. If Android has notifications off for Blastpad, or is restricting it in the background, it says so there, with the button that opens the right screen in Settings.\n- A pulled-down update notification ends with when that release was published. Notes that open with a title line (\"VillageGreen 0.7.0 (\u2026)\") now lead with their first real line instead of the title.\n\n## Good to know\n\n- Fifteen minutes is as often as Android runs a background check, and it runs them late while the phone lies idle. The channel itself can take about five minutes to show a new release. \"Within minutes\" is the usual case, not a promise.\n- A phone that updates from 0.4.1 moves to the 15-minute check by itself when the update lands. There is nothing to switch on.\n- Tested: the wording, time zones, the two clock-change days, a phone whose clock is wrong, the check schedule and the \"nothing has changed\" answer all have automated tests, and they pass. Not tested: this build has not run on a phone or an emulator, so the screen itself, pulling down to refresh and the real 15-minute timing are unproven.\n\n## Unchanged\n\n- What changed in each release is still shown before anything installs, and every download is still checked against its SHA-256 and the channel signature first.\n",
           "minSdk": 26,
           "targetSdk": 35,
-          "versionCode": 6,
+          "versionCode": 7,
           "package": "ai.undercurrent.depot.debug",
           "abis": [
             "arm64-v8a",
@@ -473,8 +473,29 @@
             "x86_64"
           ],
           "signerSha256": "43d89c5b7c2fd3a00accb28d4054af6c6d6fbea8d08425024b7a68c762f6a2b1",
-          "channelSignature": "Jb2jOYKkOkwdGIMF0kksJk0Cm2xeUNCAClKKxpvATk2z+Cfrfb8lYvhhHDyRcTBlq61F7KhG9tlpylPVTRr+Dw==",
+          "channelSignature": "s/+uNmt5uEV+USP4TK0zoWruHra6BVirOQL9dUhFA+EML90JGmPP/sKbuQc/NSOsyAsXYDe6qibpEFCKGvCpAQ==",
           "versions": [
+            {
+              "version": "0.4.2",
+              "published": "2026-10-11T17:36:22Z",
+              "notesUrl": "https://github.com/undercurrent-ai/releases/releases/tag/depot-android-v0.4.2",
+              "assets": [
+                {
+                  "role": "apk",
+                  "name": "Blastpad-0.4.2-android-debug.apk",
+                  "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.2/Blastpad-0.4.2-android-debug.apk",
+                  "sha256": "f2314167f64f3ecae87e647cea68c706011e4f86b22f2362e536f493d2996e1c",
+                  "size": 10244080
+                }
+              ],
+              "primary": {
+                "role": "apk",
+                "name": "Blastpad-0.4.2-android-debug.apk",
+                "url": "https://github.com/undercurrent-ai/releases/releases/download/depot-android-v0.4.2/Blastpad-0.4.2-android-debug.apk",
+                "sha256": "f2314167f64f3ecae87e647cea68c706011e4f86b22f2362e536f493d2996e1c",
+                "size": 10244080
+              }
+            },
             {
               "version": "0.4.1",
               "published": "2026-10-10T16:15:25Z",
